@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Minha Autoavaliação</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Rosa claro */
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #ff69b4; /* Rosa médio */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+        
+        section {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,3 +51,4 @@
     </footer>
 </body>
 </html>
+
