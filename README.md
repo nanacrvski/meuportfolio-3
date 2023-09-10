@@ -46,12 +46,12 @@
     </header>
     <main>
         <section>
-            <h2>Sobre Mim</h2>
-            <p>Eu sou [Seu Nome], e esta é minha autoavaliação...</p>
+            <h2>Autoavaliação</h2>
+            <p>Eu sou Ana CLara Nadaletti e esta é minha autoavaliação...</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Seu Nome]</p>
+        <p>&copy; 2023 [Ana Clara Nadaletti cervinski]</p>
     </footer>
 </body>
 </html>
