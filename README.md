@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
-            Calibri: Century Gothic, sans-serif;
+            font-family: Calibri, Century Gothic, sans-serif;
         }
         
         header {
@@ -18,6 +18,16 @@
             padding: 30px;
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
+            position: relative;
+        }
+
+        header::before {
+            content: "\2665"; /* Código HTML para o símbolo de coração */
+            font-size: 60px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         
         main {
@@ -51,8 +61,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Ana Clara Nadaletti cervinski]</p>
+        <p>&copy; 2023 [Ana Clara Nadaletti Cervinski] &hearts;</p> <!-- Adicionei um coração no rodapé -->
     </footer>
 </body>
 </html>
+
 
