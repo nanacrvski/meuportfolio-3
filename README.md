@@ -47,7 +47,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Seu Nome]</p>
+        <p>&copy; 2023 [Ana Clara Nadaletti Cervinski]</p>
     </footer>
 </body>
 </html>
