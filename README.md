@@ -20,14 +20,6 @@ class Portfolio:
         for index, project in enumerate(self.projects, start=1):
             print(f"Project {index}:\n{project}")
 
-
-# oi
-project1 = Project("Web App", "A dynamic web application for online shopping.", ["HTML", "CSS", "JavaScript", "Python"], "https://example.com/app")
-project2 = Project("Mobile App", "A mobile app for task management.", ["Flutter", "Dart"], "https://example.com/mobile")
-project3 = Project("Data Analysis", "An analysis of sales data using pandas.", ["Python", "Pandas"], "https://example.com/analysis")
-
-# oi
-my_portfolio = Portfolio("Ana")
-
 # Exibindo os projetos no portfólio
 my_portfolio.display_projects()
+https://i.pinimg.com/564x/5a/0f/d3/5a0fd3246ebef7a4f49e91d3240d9ae7.jpg 
