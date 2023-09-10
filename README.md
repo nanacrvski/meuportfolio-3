@@ -7,7 +7,7 @@
     <title>Minha Autoavaliação</title>
     <style>
         body {
-            background-color: #FFC0CB; /* Salmão */
+            background-color: #FFC0CB; /* pink */
             Calibri: Century Gothic, sans-serif;
         }
         
