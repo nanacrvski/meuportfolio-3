@@ -1,21 +1,23 @@
-# portfolio1
-class Project:
-(Olá! sou a Ana Clara e essa é minha autoavaliação do terceiro trimestre) 
-
-
-class Portfolio:
-    def __init__(ana):
-        self.owner_name = Ana Clara
-        self.projects = []
-
-    def add_project(self, project):
-        self.projects.append(project)
-
-    def display_projects(self):
-        print(f"Portfolio of {self.owner_name}\n")
-        for index, project in enumerate(self.projects, start=1):
-            print(f"Project {index}:\n{project}")
-
-# Exibindo os projetos no portfólio
-my_portfolio.display_projects()
-https://i.pinimg.com/564x/5a/0f/d3/5a0fd3246ebef7a4f49e91d3240d9ae7.jpg 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Minha Autoavaliação</title>
+</head>
+<body>
+    <header>
+        <h1>Minha Autoavaliação</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Eu sou [Seu Nome], e esta é minha autoavaliação...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 [Seu Nome]</p>
+    </footer>
+</body>
+</html>
