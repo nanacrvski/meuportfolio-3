@@ -1,14 +1,10 @@
 # portfolio1
 class Project:
-    def __init__(Olá! sou a Ana Clara e essa é minha autoavaliação do terceiro trimestre):
-        self.title = title
-        self.description = autoavaliação do terceiro trimestre 
-        self.technologies_used = technologies_used
-        self.link = instagram
+    def __init__(Olá! sou a Ana Clara e essa é minha autoavaliação do terceiro trimestre) 
 
 
 class Portfolio:
-    def __init__(sana):
+    def __init__(ana):
         self.owner_name = Ana Clara
         self.projects = []
 
