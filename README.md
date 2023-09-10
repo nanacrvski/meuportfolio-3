@@ -1,18 +1,15 @@
 # portfolio1
 class Project:
-    def __init__(self, title, description, technologies_used, link):
+    def __init__(Olá! sou a Ana Clara e essa é minha autoavaliação do terceiro trimestre):
         self.title = title
-        self.description = Portfólio de matmática do Anthony. 
+        self.description = autoavaliação do terceiro trimestre 
         self.technologies_used = technologies_used
-        self.link = a
-
-    def __str__(self):
-        return f"Project: {self.title}\nDescription: {self.description}\nTechnologies Used: {', '.join(self.technologies_used)}\nLink: {self.link}\n"
+        self.link = instagram
 
 
 class Portfolio:
-    def __init__(self, owner_name):
-        self.owner_name = Anthony 
+    def __init__(sana):
+        self.owner_name = Ana Clara
         self.projects = []
 
     def add_project(self, project):
@@ -24,18 +21,13 @@ class Portfolio:
             print(f"Project {index}:\n{project}")
 
 
-# Criando instâncias de projetos
+# oi
 project1 = Project("Web App", "A dynamic web application for online shopping.", ["HTML", "CSS", "JavaScript", "Python"], "https://example.com/app")
 project2 = Project("Mobile App", "A mobile app for task management.", ["Flutter", "Dart"], "https://example.com/mobile")
 project3 = Project("Data Analysis", "An analysis of sales data using pandas.", ["Python", "Pandas"], "https://example.com/analysis")
 
-# Criando uma instância do portfólio
-my_portfolio = Portfolio("Anthony")
-
-# Adicionando projetos ao portfólio
-my_portfolio.add_project(project1)
-my_portfolio.add_project(project2)
-my_portfolio.add_project(project3)
+# oi
+my_portfolio = Portfolio("Ana")
 
 # Exibindo os projetos no portfólio
 my_portfolio.display_projects()
