@@ -7,28 +7,32 @@
     <title>Minha Autoavaliação</title>
     <style>
         body {
-            background-color: #DC143C; /* Purple */
-            Bodoni: Gotham, Bodoni;
+            background-color: #fce4ec; /* Rosa claro */
+            font-family: Arial, sans-serif;
         }
         
         header {
-            background-color: 	#F08080; /* Rosa claro */
-            color:pink;
+            background-color: #F08080; /* Rosa claro */
+            color: pink;
             text-align: center;
             padding: 30px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
         }
         
         main {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: baby pink;
+            background-color: purple;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
             font-size: 26px;
+            text-align: center;
+            text-transform: uppercase;
         }
         
         section {
@@ -42,12 +46,12 @@
     </header>
     <main>
         <section>
-            <h2>Autoavaliação</h2>
-            <p>Eu sou a Ana Clara Nadaletti Cervinski e esta é minha autoavaliação do terceiro trimestre na matéria de matemática</p>
+            <h2>Sobre Mim</h2>
+            <p>Eu sou [Seu Nome], e esta é minha autoavaliação...</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Ana Clara Nadaletti Cervinski]</p>
+        <p>&copy; 2023 [Seu Nome]</p>
     </footer>
 </body>
 </html>
