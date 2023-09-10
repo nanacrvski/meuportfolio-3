@@ -13,7 +13,7 @@
         
         header {
             background-color: #F08080; /* Rosa claro */
-            color: Salmon;
+            color: MediumVioletRed;
             text-align: center;
             padding: 30px;
             border-bottom-left-radius: 50%;
