@@ -1,6 +1,6 @@
 # portfolio1
 class Project:
-    def __init__(Olá! sou a Ana Clara e essa é minha autoavaliação do terceiro trimestre) 
+(Olá! sou a Ana Clara e essa é minha autoavaliação do terceiro trimestre) 
 
 
 class Portfolio:
