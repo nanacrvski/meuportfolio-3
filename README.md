@@ -43,7 +43,7 @@
     <main>
         <section>
             <h2>Sobre Mim</h2>
-            <p>Eu sou [Seu Nome], e esta é minha autoavaliação...</p>
+            <p>Eu sou a Ana Clara Nadaletti Cervinski e esta é minha autoavaliação do terceiro trimestre na matéria de matemática</p>
         </section>
     </main>
     <footer>
