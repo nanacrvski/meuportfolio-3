@@ -7,12 +7,12 @@
     <title>Minha Autoavaliação</title>
     <style>
         body {
-            background-color: #fce4ec; /* Rosa claro */
+            background-color: #FF1493; /* Rosa claro */
             Bodoni: Gotham, Bodoni;
         }
         
         header {
-            background-color: #ff69b4; /* Rosa médio */
+            background-color: #A020F0; /* Rosa médio */
             color: green;
             text-align: center;
             padding: 20px;
