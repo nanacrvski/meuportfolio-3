@@ -13,9 +13,9 @@
         
         header {
             background-color: #A020F0; /* Rosa médio */
-            color: dark pink;
+            color: pink;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
         }
         
         main {
