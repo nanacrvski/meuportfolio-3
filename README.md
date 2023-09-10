@@ -7,7 +7,7 @@
     <title>Minha Autoavaliação</title>
     <style>
         body {
-            background-color: #FFC0CB; /* Purple */
+            background-color: #DC143C; /* Purple */
             Bodoni: Gotham, Bodoni;
         }
         
