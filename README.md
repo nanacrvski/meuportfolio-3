@@ -7,7 +7,7 @@
     <title>Minha Autoavaliação</title>
     <style>
         body {
-            background-color: #fce4ec; /* Rosa claro */
+            background-color: #FA8072; /* Rosa claro */
             Calibri: Century Gothic, sans-serif;
         }
         
