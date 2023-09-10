@@ -13,7 +13,7 @@
         
         header {
             background-color: #F08080; /* Rosa claro */
-            color: pink;
+            color: Salmon;
             text-align: center;
             padding: 30px;
             border-bottom-left-radius: 50%;
@@ -30,7 +30,7 @@
         }
         
         h1 {
-            font-size: 26px;
+            font-size: 28px;
             text-align: center;
             text-transform: uppercase;
         }
