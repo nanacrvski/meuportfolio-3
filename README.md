@@ -47,7 +47,7 @@
     <main>
         <section>
             <h2>Autoavaliação</h2>
-            <p>Eu sou Ana CLara Nadaletti e esta é minha autoavaliação...</p>
+            <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação...</p>
         </section>
     </main>
     <footer>
