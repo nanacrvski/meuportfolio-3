@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #fce4ec; /* Rosa claro */
-            font-family: Gotham, sans-serif;
+            font-family: Gotham, Bodoni;
         }
         
         header {
