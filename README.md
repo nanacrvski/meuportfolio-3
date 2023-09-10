@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #fce4ec; /* Rosa claro */
-            font-family: Arial, sans-serif;
+            Calibri: Arial, sans-serif;
         }
         
         header {
