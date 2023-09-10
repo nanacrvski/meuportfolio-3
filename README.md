@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #fce4ec; /* Rosa claro */
-            font-family: Gotham, Bodoni;
+            Bodoni: Gotham, Bodoni;
         }
         
         header {
@@ -42,7 +42,7 @@
     </header>
     <main>
         <section>
-            <h2>Sobre Mim</h2>
+            <h2>Autoavaliação</h2>
             <p>Eu sou a Ana Clara Nadaletti Cervinski e esta é minha autoavaliação do terceiro trimestre na matéria de matemática</p>
         </section>
     </main>
