@@ -12,7 +12,7 @@
         }
         
         header {
-            background-color: 	#F08080; /* Rosa médio */
+            background-color: 	#F08080; /* Rosa claro */
             color:pink;
             text-align: center;
             padding: 30px;
@@ -28,7 +28,7 @@
         }
         
         h1 {
-            font-size: 24px;
+            font-size: 26px;
         }
         
         section {
