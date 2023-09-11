@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>minha autoavaliação💞</title>
+    <title>Minha Autoavaliação💞</title>
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
@@ -52,11 +52,6 @@
 
         section {
             margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
-            padding: 20px;
-            background-color: #FFC0CB; /* Rosa claro */
-            border-radius: 10px;
-            border: 2px solid #F08080; /* Cor da borda */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
         }
     </style>
 </head>
