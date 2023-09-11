@@ -5,11 +5,11 @@ Olá. tudo bem?
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Minha Autoavaliação💞</title>
+      <img src="logo.jpg" alt="some text" width=60 height=40>  
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
             font-family: Calibri, Century Gothic, sans-serif;
-            <img src="logo.jpg" alt="some text" width=60 height=40> 
         }
         
         header {
