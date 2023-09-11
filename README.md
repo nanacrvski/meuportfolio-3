@@ -22,7 +22,7 @@
         }
 
         header::before {
-            content: "❣️"; /* Código HTML para o símbolo de coração */
+            content: "❣️"; 
             font-size: 40px;
             position: absolute;
             top: -55px;
@@ -34,7 +34,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: HotPink;
+            background-color: Plum;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -51,7 +51,7 @@
         }
 
         section {
-            margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
+            margin-top: 60px; /* Aumente o valor para mover o balão mais para baixo */
         }
     </style>
 </head>
