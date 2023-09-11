@@ -1,4 +1,4 @@
-Olá!
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@ Olá!
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
-            font-family: "Arial", sans-serif;
+            font-family: "Helvetica Neue", Arial, sans-serif; /* Altere para a fonte desejada */
             margin: 0;
             padding: 0;
         }
@@ -83,7 +83,7 @@ Olá!
 </head>
 <body>
     <header>
-        <h1>Minha Autoavaliação 💗</h1>
+        <h1 style="font-family: 'Georgia', serif;">Minha Autoavaliação 💗</h1>
     </header>
     <main>
         <section>
@@ -93,9 +93,10 @@ Olá!
         </section>
     </main>
     <div class="footer-info">
-        <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
+        <p style="font-family: 'Verdana', sans-serif;">&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
         <p>Contato: ana.nadaletticervinski@gmail.com</p>
         <p>Telefone: (54) 9655-6799</p>
     </div>
 </body>
 </html>
+
