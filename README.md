@@ -40,7 +40,7 @@
         }
         
         h1 {
-            font-size: 28px;
+            font-size: 26px;
             text-align: center;
             text-transform: uppercase;
         }
@@ -56,7 +56,7 @@
     </header>
     <main>
         <section>
-            <h2>｡☆✼★Autoavaliação★✼☆｡</h2>
+            <h2>☆★Autoavaliação★☆</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação...</p>
         </section>
     </main>
