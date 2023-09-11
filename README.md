@@ -51,7 +51,7 @@
         }
 
         section {
-            margin-top: 60px; /* Aumente o valor para mover o balão mais para baixo */
+            margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
         }
     </style>
 </head>
@@ -66,7 +66,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <a href="">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
+        <p>&copy; 2023 <a href="">Ana Clara Nadaletti Cervinski</a> 🌟</p>
     </footer>
 </body>
 </html>
