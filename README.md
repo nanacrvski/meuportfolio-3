@@ -89,7 +89,7 @@ Olá!
         <section>
             <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-           <img src="C:\Users\User\Pictures\Saved Pictures\b05c0ecb89a9a663815d99510febab4b.jpg" />
+           <img src="[C:\Users\User\Pictures\Saved Pictures\b05c0ecb89a9a663815d99510febab4b.jpg](https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2023/06/lana-del-rey.jpg)" />
         </section>
     </main>
     <div class="footer-info">
