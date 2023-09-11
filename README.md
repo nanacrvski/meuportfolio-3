@@ -1,4 +1,4 @@
-Olá!
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@ Olá!
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
-            font-family: "Helvetica Neue", Arial, sans-serif; /* Altere para a fonte desejada */
+            font-family: "Arial", sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -63,10 +63,11 @@ Olá!
         }
 
         img {
-            max-width: 100%;
+            max-width: 100%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
             height: auto;
             display: block;
             margin: 0 auto;
+            max-height: 300px; /* Defina a altura máxima desejada */
         }
 
         .icon {
@@ -83,20 +84,19 @@ Olá!
 </head>
 <body>
     <header>
-        <h1 style="font-family: 'Georgia', serif;">Minha Autoavaliação 💗</h1>
+        <h1>Minha Autoavaliação 💗</h1>
     </header>
     <main>
         <section>
             <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-           <img src="https://i.pinimg.com/564x/11/4a/29/114a29a7848d7a743a5a028ee68c5e60.jpg" />
+           <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="." />
         </section>
     </main>
     <div class="footer-info">
-        <p style="font-family: 'Verdana', sans-serif;">&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
+        <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
         <p>Contato: ana.nadaletticervinski@gmail.com</p>
         <p>Telefone: (54) 9655-6799</p>
     </div>
 </body>
 </html>
-
