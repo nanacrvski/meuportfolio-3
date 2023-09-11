@@ -1,4 +1,4 @@
-OLÁ!
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,19 +7,20 @@ OLÁ!
     <title>Minha Autoavaliação 💞</title>
     <style>
         body {
-            background-color: #FFC0CB; /* Rosa claro */
+            background-color: #FCE4EC; /* Rosa claro */
             font-family: "Arial", sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #ffa3d7; /* Rosa claro */
+            background-color: #FFC0CB; /* Rosa claro */
             color: #FF1493; /* Rosa intenso */
             text-align: center;
             padding: 30px;
-            border-radius: 0 0 50% 50%;
+            border-radius: 50%;
             position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
         }
 
         header::before {
@@ -33,11 +34,11 @@ OLÁ!
 
         main {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
-            background-color: #FF69B4; /* Rosa médio */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #FFEEF1; /* Rosa claro */
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         }
 
         h1 {
@@ -45,6 +46,7 @@ OLÁ!
             text-align: center;
             text-transform: uppercase;
             color: #FF1493; /* Rosa intenso */
+            margin-bottom: 20px;
         }
 
         a {
@@ -54,12 +56,11 @@ OLÁ!
         }
 
         section {
-            margin-top: 40px;
+            margin-top: 20px;
             padding: 20px;
-            background-color: #FFC0CB; /* Rosa claro */
-            border-radius: 10px;
-            border: 2px solid #FF1493; /* Rosa intenso para a borda */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #FFF4F7; /* Rosa claro */
+            border-radius: 15px; /* Bordas arredondadas */
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         }
 
         img {
@@ -67,7 +68,8 @@ OLÁ!
             height: auto;
             display: block;
             margin: 0 auto;
-            max-height: 200px; /* Defina a altura máxima desejada */
+            max-height: 300px; /* Defina a altura máxima desejada */
+            border-radius: 10px; /* Bordas arredondadas para a imagem */
         }
 
         .icon {
@@ -80,6 +82,11 @@ OLÁ!
             padding: 20px;
             text-align: center;
         }
+
+        .footer-info a {
+            color: #FF1493; /* Cor do link no rodapé */
+            text-decoration: underline; /* Sublinhado para links no rodapé */
+        }
     </style>
 </head>
 <body>
@@ -90,7 +97,7 @@ OLÁ!
         <section>
             <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-           <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="." />
+            <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="Imagem da Lana Del Rey" />
         </section>
     </main>
     <div class="footer-info">
@@ -100,3 +107,4 @@ OLÁ!
     </div>
 </body>
 </html>
+
