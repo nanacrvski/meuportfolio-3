@@ -95,7 +95,7 @@ Olá!
     <div class="footer-info">
         <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
         <p>Contato: ana.nadaletticervinski@gmail.com</p>
-        <p>Telefone: (12) 3456-7890</p>
+        <p>Telefone: (54) 9655-6799</p>
     </div>
 </body>
 </html>
