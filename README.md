@@ -52,6 +52,11 @@
 
         section {
             margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
+            padding: 20px;
+            background-color: #FFC0CB; /* Rosa claro */
+            border-radius: 10px;
+            border: 2px solid #F08080; /* Cor da borda */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
         }
     </style>
 </head>
@@ -66,7 +71,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <a href="">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
+        <p>&copy; 2023 <a href="https://seusite.com">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
     </footer>
 </body>
 </html>
