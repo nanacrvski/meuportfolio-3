@@ -8,7 +8,7 @@ Olá. tudo bem?
     <title>Minha Autoavaliação💞</title>
     <style>
         body {
-            background-color: #BA55D3; /* Rosa claro */
+            background-color: #FFC0CB; /* Rosa claro */
             font-family: Calibri, Century Gothic, sans-serif;
         }
         
