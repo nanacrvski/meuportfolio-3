@@ -13,7 +13,7 @@ Olá. tudo bem?
         }
         
         header {
-            background-color: #F08080; /* Rosa claro */
+            background-color: #ffa3d7; /* Rosa claro */
             color: MediumVioletRed;
             text-align: center;
             padding: 30px;
