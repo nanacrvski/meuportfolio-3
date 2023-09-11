@@ -49,9 +49,9 @@
         a {
             font-size: 14px; /* Defina o tamanho de fonte desejado */
         }
-        
+
         section {
-            margin-top: 20px;
+            margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
         }
     </style>
 </head>
@@ -70,3 +70,4 @@
     </footer>
 </body>
 </html>
+
