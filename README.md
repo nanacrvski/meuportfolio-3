@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Minha 𝒶𝓊𝓉𝑜𝒶𝓋𝒶𝓁𝒾𝒶çã𝑜💞</title>
+    <title>Minha Autoavaliação💞</title>
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
@@ -53,4 +53,25 @@
         section {
             margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
             padding: 20px;
-            background-color: #FFC0CB; /*
+            background-color: #FFC0CB; /* Rosa claro */
+            border-radius: 10px;
+            border: 2px solid #F08080; /* Cor da borda */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Autoavaliação</h1>
+    </header>
+    <main>
+        <section>
+            <h2>💗Autoavaliação💗</h2>
+            <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 <a href="https://seusite.com">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
+    </footer>
+</body>
+</html>
