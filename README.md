@@ -66,7 +66,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <a href="https://seusite.com">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
+        <p>&copy; 2023 <a href="">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
     </footer>
 </body>
 </html>
