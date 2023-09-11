@@ -46,7 +46,7 @@ Olá! Tudo bem?
         }
         
         h1 {
-            font-size: 36px;
+            font-size: 30px;
             text-align: center;
             text-transform: uppercase;
             color: #800080; /* Cor púrpura */
