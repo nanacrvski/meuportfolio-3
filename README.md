@@ -63,11 +63,11 @@
         }
 
         img {
-            max-width: 70%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
+            max-width: 100%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
             height: auto;
             display: block;
             margin: 0 auto;
-            max-height: 100px; /* Defina a altura máxima desejada */
+            max-height: 200px; /* Defina a altura máxima desejada */
         }
 
         .icon {
