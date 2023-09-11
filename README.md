@@ -9,6 +9,7 @@ Olá. tudo bem?
         body {
             background-color: #FFC0CB; /* Rosa claro */
             font-family: Calibri, Century Gothic, sans-serif;
+            <img src="logo.jpg" alt="some text" width=60 height=40> 
         }
         
         header {
