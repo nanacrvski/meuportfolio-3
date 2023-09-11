@@ -32,7 +32,7 @@
             content: "❣️"; 
             font-size: 40px;
             position: absolute;
-            top: -55px;
+            top: -70px;
             left: 50%;
             transform: translateX(-50%);
         }
