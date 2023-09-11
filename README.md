@@ -1,4 +1,4 @@
-Olá! Tudo bem?
+Olá!
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -32,9 +32,37 @@ Olá! Tudo bem?
             content: "❣️"; 
             font-size: 40px;
             position: absolute;
-            top: -70px;
+            top: -55px;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        /* Adicione decorações nos cantos */
+        header::before,
+        footer::before,
+        footer::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #F08080; /* Rosa claro */
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        header::before {
+            top: -25px;
+            left: -25px;
+        }
+
+        footer::before {
+            bottom: -25px;
+            left: -25px;
+        }
+
+        footer::after {
+            bottom: -25px;
+            right: -25px;
         }
         
         main {
@@ -46,7 +74,7 @@ Olá! Tudo bem?
         }
         
         h1 {
-            font-size: 30px;
+            font-size: 36px;
             text-align: center;
             text-transform: uppercase;
             color: #800080; /* Cor púrpura */
