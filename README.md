@@ -25,7 +25,7 @@
             content: "❣️"; /* Código HTML para o símbolo de coração */
             font-size: 40px;
             position: absolute;
-            top: -50px;
+            top: -55px;
             left: 50%;
             transform: translateX(-50%);
         }
