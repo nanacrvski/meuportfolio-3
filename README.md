@@ -6,10 +6,9 @@ Olá. tudo bem?
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Minha Autoavaliação💞</title>
-    <img src="61a952bd6ca1cce3c045682582d47cda](https://github.com/nanacrvski/meuportfolio-3/assets/141583249/24cea1af-fd2a-4fb9-a04f-b874c47f28b4" alt="some text" width=60 height=40> 
     <style>
         body {
-            background-color: #FFC0CB; /* Rosa claro */
+            background-color: #BA55D3; /* Rosa claro */
             font-family: Calibri, Century Gothic, sans-serif;
         }
         
@@ -73,7 +72,7 @@ Olá. tudo bem?
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <a href="">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
+        <p>&copy; 2023 <a href="">Ana Clara Nadaletti Cervinski</a> 🌟</p>
     </footer>
 </body>
 </html>
