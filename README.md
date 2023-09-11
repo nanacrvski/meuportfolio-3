@@ -1,4 +1,4 @@
-Olá tudo bem?
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -25,14 +25,14 @@ Olá tudo bem?
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
             position: relative;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         header::before {
             content: "❣️"; 
             font-size: 40px;
             position: absolute;
-            top: -53px;
+            top: -55px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -41,7 +41,7 @@ Olá tudo bem?
             max-width: 800px;
             padding: 30px;
             background-color: Plum;
-            border-radius: 10px;
+            border-radius: 20px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         }
         
@@ -75,11 +75,19 @@ Olá tudo bem?
             font-size: 18px;
             text-align: justify;
             color: #4B0082; /* Cor índigo */
+            padding: 10px;
+            border: 2px dashed #800080; /* Cor púrpura */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(128, 0, 128, 0.2);
         }
 
         footer {
             text-align: center;
             margin-top: 30px;
+            background-color: #800080; /* Cor púrpura */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(128, 0, 128, 0.2);
         }
 
         footer a {
