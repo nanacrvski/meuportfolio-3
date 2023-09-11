@@ -61,7 +61,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Ana Clara Nadaletti Cervinski] &hearts;</p> <!-- Adicionei um coração no rodapé -->
+        <p>&copy; 2023 [Ana Clara Nadaletti Cervinski] 🌟;</p> <!-- Adicionei um coração no rodapé -->
     </footer>
 </body>
 </html>
