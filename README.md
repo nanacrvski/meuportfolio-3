@@ -23,7 +23,7 @@
         }
 
         header::before {
-            content: "❣️";
+            content: "❣️❣️❣️";
             font-size: 40px;
             position: absolute;
             top: -55px;
