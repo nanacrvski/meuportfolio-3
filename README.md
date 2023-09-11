@@ -63,7 +63,7 @@
         }
 
         img {
-            max-width: 100%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
+            max-width: 70%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
             height: auto;
             display: block;
             margin: 0 auto;
