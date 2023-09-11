@@ -56,7 +56,7 @@
     </header>
     <main>
         <section>
-            <h2>｡☆✼★━━━━Autoavaliação━━━━━★✼☆｡</h2>
+            <h2>｡☆✼★Autoavaliação★✼☆｡</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação
                 
                 
