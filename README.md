@@ -1,14 +1,20 @@
-Olá! tudo bem?
+Olá tudo bem?
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title> Minha Autoavaliação💞</title>
+    <title>Minha Autoavaliação💞</title>
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
             font-family: Calibri, Century Gothic, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         
         header {
@@ -19,6 +25,7 @@ Olá! tudo bem?
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
             position: relative;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         header::before {
@@ -32,26 +39,56 @@ Olá! tudo bem?
         
         main {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             background-color: Plum;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
         }
         
         h1 {
-            font-size: 26px;
+            font-size: 36px;
             text-align: center;
             text-transform: uppercase;
+            color: #800080; /* Cor púrpura */
+            margin-bottom: 20px;
         }
 
         /* Estilize o link <a> para torná-lo menor */
         a {
             font-size: 15px; /* Defina o tamanho de fonte desejado */
+            text-decoration: none;
+            color: #FF69B4; /* Cor rosa mais escura */
         }
 
         section {
-            margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #800080; /* Cor púrpura */
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+            color: #4B0082; /* Cor índigo */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer a {
+            font-weight: bold;
+            color: #FF69B4; /* Cor rosa mais escura */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -66,7 +103,7 @@ Olá! tudo bem?
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <a href="https://youtu.be/d_3WNv4wfEY?si=AYGRCgLlQAs87p9U">salvatore</a> 🌟</p>
+        <p>&copy; 2023 <a href="https://youtu.be/d_3WNv4wfEY?si=AYGRCgLlQAs87p9U">Assista ao vídeo "Salvatore"</a> 🌟</p>
     </footer>
 </body>
 </html>
