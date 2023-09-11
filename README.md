@@ -90,12 +90,11 @@ Olá!
             <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
             <img src=""C:\Users\User\Pictures\Saved Pictures\b05c0ecb89a9a663815d99510febab4b.jpg"" alt="Imagem relacionada">
-            <p>Para saber mais sobre mim, visite meu perfil no <a href="#">LinkedIn</a>.</p>
         </section>
     </main>
     <div class="footer-info">
         <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
-        <p>Contato: anaclara@email.com</p>
+        <p>Contato: ana.nadaletticervinski@gmail.com</p>
         <p>Telefone: (12) 3456-7890</p>
     </div>
 </body>
