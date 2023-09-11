@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Olá!
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -89,7 +89,7 @@
         <section>
             <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-            <img src="imagem.jpg" alt="Imagem relacionada">
+            <img src=""C:\Users\User\Pictures\Saved Pictures\b05c0ecb89a9a663815d99510febab4b.jpg"" alt="Imagem relacionada">
             <p>Para saber mais sobre mim, visite meu perfil no <a href="#">LinkedIn</a>.</p>
         </section>
     </main>
