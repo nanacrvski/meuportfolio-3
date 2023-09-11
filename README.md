@@ -5,7 +5,7 @@ Olá. tudo bem?
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Minha Autoavaliação💞</title>
-      <img src="logo.jpg" alt="some text" width=60 height=40>  
+      <img src=""C:\Users\04396218010\Downloads\61a952bd6ca1cce3c045682582d47cda.jpg"" alt="." width=60 height=40>  
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
