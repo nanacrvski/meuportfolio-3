@@ -47,7 +47,7 @@ Olá!
             height: 50px;
             background-color: #F08080; /* Rosa claro */
             border-radius: 50%;
-            opacity: 0.7;
+            opacity: 0.8;
         }
 
         header::before {
