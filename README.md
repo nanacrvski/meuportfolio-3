@@ -67,7 +67,7 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            max-height: 300px; /* Defina a altura máxima desejada */
+            max-height: 100px; /* Defina a altura máxima desejada */
         }
 
         .icon {
