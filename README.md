@@ -141,7 +141,8 @@ Olá!
     </header>
     <main>
         <!-- Adicione uma imagem de exemplo -->
-        <img src="caminho_para_sua_imagem.jpg" alt="Minha Imagem" class="imagem">
+        <img src="![b05c0ecb89a9a663815d99510febab4b](https://github.com/nanacrvski/meuportfolio-3/assets/141583249/315c1bf7-f751-4eea-b8dd-1af6a3dc0ac0)
+" alt="Minha Imagem" class="imagem">
         <section>
             <h2>💗Autoavaliação💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação...</p>
