@@ -44,6 +44,11 @@
             text-align: center;
             text-transform: uppercase;
         }
+
+        /* Estilize o link <a> para torná-lo menor */
+        a {
+            font-size: 14px; /* Defina o tamanho de fonte desejado */
+        }
         
         section {
             margin-top: 20px;
@@ -61,7 +66,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Ana Clara Nadaletti Cervinski] 🌟;</p> <!-- Adicionei um coração no rodapé -->
+        <p>&copy; 2023 <a href="https://seusite.com">Ana Clara Nadaletti Cervinski</a> 🌟;</p>
     </footer>
 </body>
 </html>
