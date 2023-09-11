@@ -47,7 +47,7 @@
 
         /* Estilize o link <a> para torná-lo menor */
         a {
-            font-size: 14px; /* Defina o tamanho de fonte desejado */
+            font-size: 8px; /* Defina o tamanho de fonte desejado */
         }
 
         section {
