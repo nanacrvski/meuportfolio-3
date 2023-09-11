@@ -66,7 +66,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 <a href="https://youtu.be/d_3WNv4wfEY?si=AYGRCgLlQAs87p9U">Salvatore</a> 🌟</p>
+        <p>&copy; 2023 <a href="https://youtu.be/d_3WNv4wfEY?si=AYGRCgLlQAs87p9U">salvatore</a> 🌟</p>
     </footer>
 </body>
 </html>
