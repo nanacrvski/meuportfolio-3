@@ -1,4 +1,4 @@
-Olá, tudo bem?
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,17 @@ Olá, tudo bem?
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
-            font-family: Calibri, Century Gothic, sans-serif;
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         header {
             background-color: #ffa3d7; /* Rosa claro */
-            color: MediumVioletRed;
+            color: #FF1493; /* Rosa intenso */
             text-align: center;
             padding: 30px;
-            border-bottom-left-radius: 50%;
-            border-bottom-right-radius: 50%;
+            border-radius: 0 0 50% 50%;
             position: relative;
         }
 
@@ -34,31 +35,49 @@ Olá, tudo bem?
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: HotPink;
+            background-color: #FF69B4; /* Rosa médio */
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             font-size: 36px;
             text-align: center;
             text-transform: uppercase;
-            color: #FF1493; /* Cor personalizada para o título */
+            color: #FF1493; /* Rosa intenso */
         }
 
-        /* Estilize o link <a> para torná-lo menor */
         a {
-            font-size: 14px; /* Defina o tamanho de fonte desejado */
-            color: MediumVioletRed; /* Cor personalizada para os links */
+            font-size: 16px; /* Tamanho de fonte aumentado */
+            color: #FF69B4; /* Rosa médio para links */
+            text-decoration: none; /* Removendo sublinhado padrão */
         }
 
         section {
-            margin-top: 40px; /* Aumente o valor para mover o balão mais para baixo */
+            margin-top: 40px;
             padding: 20px;
             background-color: #FFC0CB; /* Rosa claro */
             border-radius: 10px;
-            border: 2px solid #F08080; /* Cor da borda */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+            border: 2px solid #FF1493; /* Rosa intenso para a borda */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .footer-info {
+            background-color: #FFC0CB;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -68,12 +87,16 @@ Olá, tudo bem?
     </header>
     <main>
         <section>
-            <h2>💗 Autoavaliação 💗</h2>
+            <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
+            <img src="imagem.jpg" alt="Imagem relacionada">
+            <p>Para saber mais sobre mim, visite meu perfil no <a href="#">LinkedIn</a>.</p>
         </section>
     </main>
-    <footer>
+    <div class="footer-info">
         <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
-    </footer>
+        <p>Contato: anaclara@email.com</p>
+        <p>Telefone: (12) 3456-7890</p>
+    </div>
 </body>
 </html>
