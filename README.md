@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Minha Autoavaliação💞</title>
+    <title>Minha 𝒶𝓊𝓉𝑜𝒶𝓋𝒶𝓁𝒾𝒶çã𝑜💞</title>
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
