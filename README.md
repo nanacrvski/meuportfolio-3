@@ -23,7 +23,7 @@ Olá. tudo bem?
         }
 
         header::before {
-            content: "❣️"; /* Código HTML para o símbolo de coração */
+            content: "❣️"; 
             font-size: 40px;
             position: absolute;
             top: -55px;
