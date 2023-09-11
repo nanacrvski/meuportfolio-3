@@ -5,7 +5,6 @@ Olá. tudo bem?
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Minha Autoavaliação💞</title>
-      <img src=""C:\Users\04396218010\Downloads\61a952bd6ca1cce3c045682582d47cda.jpg"" alt="Apenas um imagem decorativa" width=60 height=40>  
     <style>
         body {
             background-color: #FFC0CB; /* Rosa claro */
@@ -60,6 +59,7 @@ Olá. tudo bem?
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
         }
     </style>
+![61a952bd6ca1cce3c045682582d47cda](https://github.com/nanacrvski/meuportfolio-3/assets/141583249/3c4e7136-d464-47c4-80f8-da0e05e94662)
 </head>
 <body>
     <header>
