@@ -68,7 +68,7 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            max-height: 300px; /* Defina a altura máxima desejada */
+            max-height: 200px; /* Defina a altura máxima desejada */
             border-radius: 10px; /* Bordas arredondadas para a imagem */
         }
 
