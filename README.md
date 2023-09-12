@@ -113,8 +113,8 @@
 
         <!-- Botões Interativos -->
         <div style="text-align: center;">
-            <button>Botão 1</button>
-            <button>Botão 2</button>
+            <button id="botao1">Botão 1</button>
+            <button id="botao2">Botão 2</button>
         </div>
     </main>
     <div class="footer-info">
@@ -122,5 +122,18 @@
         <p>Contato: ana.nadaletticervinski@gmail.com</p>
         <p>Telefone: (54) 9655-6799</p>
     </div>
+
+    <!-- Script para tornar os botões funcionais -->
+    <script>
+        // Função para exibir uma mensagem quando o Botão 1 é clicado
+        document.querySelector('#botao1').addEventListener('click', function () {
+            alert('Você clicou no Botão 1!');
+        });
+
+        // Função para exibir uma mensagem quando o Botão 2 é clicado
+        document.querySelector('#botao2').addEventListener('click', function () {
+            alert('Você clicou no Botão 2!');
+        });
+    </script>
 </body>
 </html>
