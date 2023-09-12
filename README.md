@@ -113,7 +113,7 @@
         <section>
             <h2><span class="icon">✨</span>Autoavaliação✨</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-            <img src="[https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg](https://i.pinimg.com/564x/19/67/23/19672351d371ad8cacdbb4def232aca4.jpg)" alt="Imagem" />
+            <img src="https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low" alt="Imagem" />
         </section>
     </main>
     <div class="footer-info">
