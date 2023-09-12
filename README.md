@@ -1,4 +1,4 @@
-<3
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,15 +7,15 @@
     <title>Minha Autoavaliação 💞</title>
     <style>
         body {
-            background-color: #FCE4EC; /* Rosa claro */
+            background-color: #F7DC6F; /* Amarelo-ouro */
             font-family: "Arial", sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color:#ff7d99; /* Rosa claro */
-            color: #FF1493; /* Rosa intenso */
+            background-color: #0074E4; /* Azul-celeste */
+            color: #FFD700; /* Amarelo-dourado */
             text-align: center;
             padding: 30px;
             border-radius: 50%;
@@ -24,7 +24,7 @@
         }
 
         header::before {
-            content: "❣️❣️❣️";
+            content: "🌟🌟🌟"; /* Estrelas como elemento decorativo */
             font-size: 40px;
             position: absolute;
             top: -55px;
@@ -36,7 +36,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffd1db; /* Rosa claro */
+            background-color: #FFF4F7; /* Rosa claro */
             border-radius: 15px; /* Bordas arredondadas */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         }
@@ -45,14 +45,14 @@
             font-size: 36px;
             text-align: center;
             text-transform: uppercase;
-            color: #FF1493; /* Rosa intenso */
+            color: #FFD700; /* Amarelo-dourado */
             margin-bottom: 20px;
         }
 
         a {
             font-size: 16px; /* Tamanho de fonte aumentado */
-            color: #FF69B4; /* Rosa médio para links */
-            text-decoration: none; /* Removendo sublinhado padrão */
+            color: #0074E4; /* Azul-celeste para links */
+            text-decoration: underline; /* Sublinhado para links */
         }
 
         section {
@@ -61,15 +61,31 @@
             background-color: #FFF4F7; /* Rosa claro */
             border-radius: 15px; /* Bordas arredondadas */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            position: relative;
+        }
+
+        /* Exemplo de pincelada como elemento decorativo */
+        section::after {
+            content: "";
+            background-image: url('seu-caminho-para-uma-imagem-de-pincelada.jpg');
+            background-size: cover;
+            opacity: 0.1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            border-radius: 15px;
         }
 
         img {
-            max-width: 100%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
+            max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
-            max-height: 200px; /* Defina a altura máxima desejada */
-            border-radius: 10px; /* Bordas arredondadas para a imagem */
+            max-height: 200px;
+            border-radius: 10px;
         }
 
         .icon {
@@ -78,13 +94,13 @@
         }
 
         .footer-info {
-            background-color: #FFC0CB;
+            background-color: #FFD700; /* Amarelo-dourado */
             padding: 20px;
             text-align: center;
         }
 
         .footer-info a {
-            color: #FF1493; /* Cor do link no rodapé */
+            color: #0074E4; /* Azul-celeste para links no rodapé */
             text-decoration: underline; /* Sublinhado para links no rodapé */
         }
     </style>
