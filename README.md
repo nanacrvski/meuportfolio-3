@@ -7,15 +7,15 @@
     <title>Minha Autoavaliação 💞</title>
     <style>
         body {
-            background-color: #F7DC6F; /* Amarelo-ouro */
+            background-color: #4a4a91; /* Amarelo-ouro */
             font-family: "Arial", sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #0074E4; /* Azul-celeste */
-            color: #FFD700; /* Amarelo-dourado */
+            background-color: #f7fa43; /* Azul-celeste */
+            color: #b6a6ff; /* Amarelo-dourado */
             text-align: center;
             padding: 30px;
             border-radius: 50%;
