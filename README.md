@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Minha Autoavaliação 💞</title>
+    <title>Minha Autoavaliação 🌃</title>
     <style>
         body {
             background-color: #4a4a91; /* Amarelo-ouro */
@@ -107,11 +107,11 @@
 </head>
 <body>
     <header>
-        <h1>Minha Autoavaliação 💗</h1>
+        <h1>Minha Autoavaliação🌌</h1>
     </header>
     <main>
         <section>
-            <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
+            <h2><span class="icon">✨</span> Autoavaliação✨</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
             <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="Imagem da Lana Del Rey" />
         </section>
