@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<3
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -87,17 +87,6 @@
             color: #FF1493; /* Cor do link no rodapé */
             text-decoration: underline; /* Sublinhado para links no rodapé */
         }
-
-        /* Estilo dos botões */
-        button {
-            background-color: #FF69B4; /* Rosa médio */
-            color: #FFF; /* Texto branco */
-            padding: 10px 20px; /* Espaçamento interno */
-            border: none; /* Sem borda */
-            border-radius: 5px; /* Bordas arredondadas */
-            cursor: pointer;
-            margin-top: 10px; /* Espaçamento superior */
-        }
     </style>
 </head>
 <body>
@@ -110,30 +99,11 @@
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
             <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="Imagem da Lana Del Rey" />
         </section>
-
-        <!-- Botões Interativos -->
-        <div style="text-align: center;">
-            <button id="botao1">Botão 1</button>
-            <button id="botao2">Botão 2</button>
-        </div>
     </main>
     <div class="footer-info">
         <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
         <p>Contato: ana.nadaletticervinski@gmail.com</p>
         <p>Telefone: (54) 9655-6799</p>
     </div>
-
-    <!-- Script para tornar os botões funcionais -->
-    <script>
-        // Função para exibir uma mensagem quando o Botão 1 é clicado
-        document.querySelector('#botao1').addEventListener('click', function () {
-            alert('Você clicou no Botão 1!');
-        });
-
-        // Função para exibir uma mensagem quando o Botão 2 é clicado
-        document.querySelector('#botao2').addEventListener('click', function () {
-            alert('Você clicou no Botão 2!');
-        });
-    </script>
 </body>
 </html>
