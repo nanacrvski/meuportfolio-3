@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color:#ff99af; /* Rosa claro */
+            background-color:#ff7d99; /* Rosa claro */
             color: #FF1493; /* Rosa intenso */
             text-align: center;
             padding: 30px;
