@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color: #f7fa43; /* Azul-celeste */
+            background-color: #fff673; /* Azul-celeste */
             color: #b6a6ff; /* Amarelo-dourado */
             text-align: center;
             padding: 30px;
