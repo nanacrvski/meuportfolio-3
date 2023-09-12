@@ -45,13 +45,13 @@
             font-size: 36px;
             text-align: center;
             text-transform: uppercase;
-            color: #FFD700; /* Amarelo-dourado */
+            color: #000000; /* Amarelo-dourado */
             margin-bottom: 20px;
         }
 
         a {
             font-size: 16px; /* Tamanho de fonte aumentado */
-            color: #0074E4; /* Azul-celeste para links */
+            color: #fbff00; /* Azul-celeste para links */
             text-decoration: underline; /* Sublinhado para links */
         }
 
@@ -67,7 +67,7 @@
         /* Exemplo de pincelada como elemento decorativo */
         section::after {
             content: "";
-            background-image: url('seu-caminho-para-uma-imagem-de-pincelada.jpg');
+            background- image:https://i.pinimg.com/564x/19/67/23/19672351d371ad8cacdbb4def232aca4.jpg; 
             background-size: cover;
             opacity: 0.1;
             top: 0;
@@ -111,9 +111,9 @@
     </header>
     <main>
         <section>
-            <h2><span class="icon">✨</span> Autoavaliação✨</h2>
+            <h2><span class="icon">✨</span>Autoavaliação✨</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-            <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="Imagem da Lana Del Rey" />
+            <img src="[https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg](https://i.pinimg.com/564x/19/67/23/19672351d371ad8cacdbb4def232aca4.jpg)" alt="Imagem" />
         </section>
     </main>
     <div class="footer-info">
