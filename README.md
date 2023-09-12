@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<3
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color: #FFC0CB; /* Rosa claro */
+            background-color:#ff99af; /* Rosa claro */
             color: #FF1493; /* Rosa intenso */
             text-align: center;
             padding: 30px;
