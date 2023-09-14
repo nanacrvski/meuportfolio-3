@@ -115,7 +115,7 @@
             <h2><span class="icon">✨</span>Autoavaliação✨</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
             <img src="https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low" alt="Imagem" />
-              <img src="[https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low](https://cdn.culturagenial.com/imagens/as-10-obras-fundamentais-de-van-gogh-e-a-sua-biografia-og.jpg?class=ogImageWide)" alt="Imagem" />
+              <img src="https://cdn.culturagenial.com/imagens/as-10-obras-fundamentais-de-van-gogh-e-a-sua-biografia-og.jpg?class=ogImageWide" alt="Imagem" />
         </section>
     </main>
     <div class="footer-info">
