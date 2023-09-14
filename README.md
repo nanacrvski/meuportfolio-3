@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+     <img src="https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low" alt="Imagem" />
     <title>Minha Autoavaliação 🌃</title>
     <style>
         body {
