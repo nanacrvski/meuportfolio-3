@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-     <img src="https://cdn.culturagenial.com/imagens/as-10-obras-fundamentais-de-van-gogh-e-a-sua-biografia-og.jpg?class=ogImageWide" alt="Imagem" />
+    <!-- Inclua links para fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Minha Autoavaliação 🌃</title>
     <style>
         body {
             background-color: #4a4a91; /* Amarelo-ouro */
-            font-family: "Arial", sans-serif;
+            font-family: "Roboto", sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -19,7 +21,7 @@
             color: #b6a6ff; /* Amarelo-dourado */
             text-align: center;
             padding: 30px;
-            border-radius: 50%;
+            border-radius: 15px; /* Bordas arredondadas */
             position: relative;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
         }
@@ -37,7 +39,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color:#f5d762; /* Rosa claro */
+            background-color: #f5d762; /* Rosa claro */
             border-radius: 15px; /* Bordas arredondadas */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         }
@@ -59,7 +61,7 @@
         section {
             margin-top: 20px;
             padding: 20px;
-            background-color: #FFF4F7; /* Rosa claro */
+            background-color: rgba(255, 244, 247, 0.9); /* Rosa claro com opacidade */
             border-radius: 15px; /* Bordas arredondadas */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
             position: relative;
@@ -68,9 +70,9 @@
         /* Exemplo de pincelada como elemento decorativo */
         section::after {
             content: "";
-            background- image:https://i.pinimg.com/564x/19/67/23/19672351d371ad8cacdbb4def232aca4.jpg; 
+            background-image: url('https://i.pinimg.com/564x/19/67/23/19672351d371ad8cacdbb4def232aca4.jpg');
             background-size: cover;
-            opacity: 0.1;
+            opacity: 0.2;
             top: 0;
             left: 0;
             bottom: 0;
@@ -104,6 +106,11 @@
             color: #636eff; /* Azul-celeste para links no rodapé */
             text-decoration: underline; /* Sublinhado para links no rodapé */
         }
+
+        /* Estilo de link ao passar o mouse */
+        a:hover {
+            color: #ffcc00; /* Amarelo escuro */
+        }
     </style>
 </head>
 <body>
@@ -114,7 +121,7 @@
         <section>
             <h2><span class="icon">✨</span>Autoavaliação✨</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
-            <img src="https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low" alt="Imagem" />
+            <img src="https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low" alt="A Noite Estrelada de Vincent van Gogh" />
         </section>
     </main>
     <div class="footer-info">
