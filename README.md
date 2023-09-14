@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg" alt="Imagem" />
+     <img src="https://cdn.culturagenial.com/imagens/as-10-obras-fundamentais-de-van-gogh-e-a-sua-biografia-og.jpg?class=ogImageWide" alt="Imagem" />
     <title>Minha Autoavaliação 🌃</title>
     <style>
         body {
@@ -115,7 +115,6 @@
             <h2><span class="icon">✨</span>Autoavaliação✨</h2>
             <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
             <img src="https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low" alt="Imagem" />
-              <img src="https://cdn.culturagenial.com/imagens/as-10-obras-fundamentais-de-van-gogh-e-a-sua-biografia-og.jpg?class=ogImageWide" alt="Imagem" />
         </section>
     </main>
     <div class="footer-info">
