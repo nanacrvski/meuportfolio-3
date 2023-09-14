@@ -94,7 +94,7 @@
         }
 
         .footer-info {
-            background-color: #FFD700; /* Amarelo-dourado */
+            background-color: #f6ff4a; /* Amarelo-dourado */
             padding: 20px;
             text-align: center;
         }
