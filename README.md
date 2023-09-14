@@ -100,7 +100,7 @@
         }
 
         .footer-info a {
-            color: #0074E4; /* Azul-celeste para links no rodapé */
+            color: #636eff; /* Azul-celeste para links no rodapé */
             text-decoration: underline; /* Sublinhado para links no rodapé */
         }
     </style>
