@@ -37,7 +37,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #e9eb71; /* Rosa claro */
+            background-color:#f5d762; /* Rosa claro */
             border-radius: 15px; /* Bordas arredondadas */
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         }
