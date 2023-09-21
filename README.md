@@ -79,7 +79,7 @@
         <!-- Blog ou Diário Online -->
         <section class="blog">
             <h2>Meu Blog</h2>
-            <!-- Adicione aqui suas postagens do blog -->
+            <!-- oi -->
         </section>
 
         <!-- Depoimentos ou Referências -->
