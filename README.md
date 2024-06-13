@@ -120,7 +120,7 @@
     <main>
         <section>
             <h2><span class="icon">✨</span>Autoavaliação✨</h2>
-            <p>Meu amor, fwliz dia dos namorados, estou te escrevendo isso porque quero que voce nunca duvide de todo meu amor por voce. Sou completamente apaixonada por tudo em ti, desde seu cabelo até seus pezinhos, eu te amo por inteiro, obrigada por tornar meus dias melhores, porque, além de meu namorado, você é meu melhor amigo, EU TE AMO!</p>
+            <p>Meu amor, feliz dia dos namorados, estou te escrevendo isso porque quero que voce nunca duvide de todo meu amor por voce. Sou completamente apaixonada por tudo em ti, desde seu cabelo até seus pezinhos, eu te amo por inteiro, obrigada por tornar meus dias melhores, porque, além de meu namorado, você é meu melhor amigo, EU TE AMO!</p>
             <img src="[https://s.ebiografia.com/img/an/oi/a_noite_estrelada.jpg?auto_optimize=low](https://i.pinimg.com/736x/fc/3d/25/fc3d25900d718a754d6345243769bde9.jpg)" alt="nós" />
         </section>
     </main>
