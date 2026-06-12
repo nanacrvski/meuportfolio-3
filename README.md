@@ -170,13 +170,13 @@ body{
     </div>
 
     <div class="img-container">
-        <img src="anime2.png" alt="Anime">
+        <img src="[anime2.png](https://img.freepik.com/vetores-premium/y2k-fundo-roxo-abstrato-com-grade-e-estrelas-papel-de-parede-quadrado-de-gradiente-de-malha-pastel-design-vetorial-minimalista-de-moda-em-estilo-brutalismo_647468-775.jpg)" alt="Anime">
     </div>
 
 </div>
 
 <div class="img-container big">
-    <img src="carro.png" alt="BMW">
+    <img src="[carro.png](https://i.pinimg.com/736x/b5/99/63/b59963bb3889e2ef90ce4a1750b87c3c.jpg)" alt="BMW">
 </div>
 
     </div>
