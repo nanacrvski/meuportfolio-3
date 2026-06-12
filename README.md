@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<3
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -138,14 +138,14 @@ body{
             <h2>💜 Sobre Mim</h2>
 
             <p>
-                Nome: Seu Nome
+                Nome: Anac
             </p>
 
             <br>
 
             <p>
-                Estudante de Engenharia Ambiental,
-                apaixonado por tecnologia,
+                Estudante de pedagogia,
+                apaixonada por tecnologia,
                 programação e design.
             </p>
 
