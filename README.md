@@ -1,315 +1,194 @@
-<3
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cyber Pink Profile</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<title>Meu Perfil Y2K</title>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana,sans-serif;
 }
 
 body{
-font-family:'Orbitron',sans-serif;
-background:linear-gradient(135deg,#070018,#21003d,#4b0082);
-background-attachment:fixed;
-min-height:100vh;
-padding:30px;
-color:white;
+    background:linear-gradient(135deg,#6f6dff,#a85cff,#d98cff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
 }
 
 .container{
-max-width:1300px;
-margin:auto;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-border:2px solid rgba(255,0,255,0.3);
-border-radius:30px;
-overflow:hidden;
-box-shadow:0 0 50px #ff00ff55;
+    width:1000px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border:3px solid #d8c0ff;
+    border-radius:25px;
+    padding:20px;
+    box-shadow:0 0 30px rgba(255,255,255,0.4);
 }
 
 .topbar{
-height:90px;
-background:linear-gradient(90deg,#ff00aa,#7b2dff);
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:2rem;
-font-weight:bold;
-letter-spacing:3px;
-text-shadow:0 0 15px white;
+    background:linear-gradient(to bottom,#caa8ff,#9f7cff);
+    border-radius:20px;
+    padding:10px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
 .menu{
-display:flex;
-justify-content:center;
-gap:20px;
-padding:20px;
-background:#120020;
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
 }
 
-.menu a{
-text-decoration:none;
-color:white;
-padding:12px 25px;
-border-radius:30px;
-background:linear-gradient(90deg,#ff00aa,#7b2dff);
-transition:.3s;
+.menu button{
+    flex:1;
+    border:none;
+    padding:12px;
+    border-radius:30px;
+    background:linear-gradient(to bottom,#ffb1ff,#9b7cff);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
 }
 
-.menu a:hover{
-transform:translateY(-3px);
-box-shadow:0 0 20px #ff00ff;
-}
-
-.hero{
-height:350px;
-background:url('anime2.png') center center;
-background-size:cover;
-position:relative;
-}
-
-.hero::before{
-content:'';
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.4);
-}
-
-.hero-text{
-position:absolute;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
-text-align:center;
-z-index:2;
-}
-
-.hero-text h1{
-font-size:4rem;
-text-shadow:0 0 25px #ff00ff;
-}
-
-.hero-text p{
-margin-top:10px;
-font-size:1.2rem;
+.menu button:hover{
+    transform:scale(1.05);
 }
 
 .content{
-padding:30px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
 
 .card{
-background:rgba(255,255,255,.05);
-border:1px solid rgba(255,0,255,.3);
-border-radius:20px;
-padding:20px;
-box-shadow:0 0 15px rgba(255,0,255,.3);
+    background:rgba(255,255,255,0.25);
+    border:2px solid #d9c7ff;
+    border-radius:20px;
+    padding:15px;
 }
 
 .card h2{
-margin-bottom:15px;
-color:#ff7cff;
+    color:white;
+    margin-bottom:10px;
 }
 
-.profile-img{
-width:100%;
-height:400px;
-object-fit:cover;
-border-radius:15px;
-border:2px solid #ff4dff;
+.card p{
+    color:white;
+    line-height:1.5;
 }
 
 .gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
 }
 
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:15px;
-border:2px solid #ff4dff;
-transition:.4s;
+.img{
+    height:140px;
+    border-radius:15px;
+    background:linear-gradient(45deg,#ffd6ff,#a1d7ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#6a00a8;
+    font-weight:bold;
 }
 
-.gallery img:hover{
-transform:scale(1.04);
-box-shadow:0 0 20px #ff00ff;
-}
-
-.car-section{
-margin:30px;
-}
-
-.car-section img{
-width:100%;
-height:500px;
-object-fit:cover;
-border-radius:20px;
-border:3px solid #ff00ff;
-box-shadow:0 0 30px #ff00ff;
-}
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:15px;
-}
-
-.skill{
-padding:10px 20px;
-border-radius:20px;
-background:linear-gradient(90deg,#ff00aa,#7b2dff);
-}
-
-.social{
-display:flex;
-justify-content:center;
-gap:20px;
-padding:30px;
-}
-
-.social a{
-width:60px;
-height:60px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-background:linear-gradient(90deg,#ff00aa,#7b2dff);
-font-size:1.5rem;
-text-decoration:none;
-color:white;
+.big{
+    margin-top:10px;
+    height:180px;
 }
 
 .footer{
-text-align:center;
-padding:25px;
-background:#0d0018;
-}
-
-@media(max-width:900px){
-
-.content{
-grid-template-columns:1fr;
-}
-
-.hero-text h1{
-font-size:2.5rem;
-}
-
+    margin-top:20px;
+    text-align:center;
+    color:white;
 }
 
 </style>
 </head>
-
 <body>
 
 <div class="container">
 
-<div class="topbar">
-CYBER PINK PROFILE
-</div>
+    <div class="topbar">
+        ✨ site by Anac ✨
+    </div>
 
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Sobre</a>
-<a href="#">Projetos</a>
-<a href="#">Contato</a>
-</div>
+    <div class="menu">
+        <button>🏠 Home</button>
+        <button>🎀 Sobre</button>
+        <button>📷 Galeria</button>
+        <button>💌 Contato</button>
+    </div>
 
-<div class="hero">
+    <div class="content">
 
-<div class="hero-text">
-<h1>DIEUDO</h1>
-<p>Programação • Engenharia • Cyberpunk</p>
-</div>
+        <div class="card">
+            <h2>💜 Sobre Mim</h2>
 
-</div>
+            <p>
+                Nome: Ana Clara
+            </p>
 
-<div class="content">
+            <br>
 
-<div class="card">
+            <p>
+                Estudante de pedagogia
+            </p>
 
-<h2>Sobre Mim</h2>
+            <br>
 
-<img src="anime1.png" class="profile-img">
+            <div class="gallery">
+                <div class="img">Imagem 1</div>
+                <div class="img">Imagem 2</div>
+            </div>
 
-<br><br>
+            <div class="img big">
+                Imagem Destaque
+            </div>
+        </div>
 
-<p>
-Bem-vindo ao meu espaço digital.
-Sou estudante de Engenharia Ambiental,
-apaixonado por tecnologia, programação,
-inteligência artificial e design cyberpunk.
-</p>
+        <div class="card">
 
-<div class="skills">
+            <h2>🌸 Perfil</h2>
 
-<div class="skill">Python</div>
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">GitHub</div>
+          <div class="gallery">
 
-</div>
+    <div class="img-container">
+        <img src="anime1.png" alt="Anime">
+    </div>
 
-</div>
-
-<div class="card">
-
-<h2>Galeria</h2>
-
-<div class="gallery">
-
-<img src="anime1.png">
-<img src="anime2.png">
-<img src="anime2.png">
-<img src="anime1.png">
+    <div class="img-container">
+        <img src="anime2.png" alt="Anime">
+    </div>
 
 </div>
 
+<div class="img-container big">
+    <img src="carro.png" alt="BMW">
 </div>
 
-</div>
+    </div>
 
-<div class="car-section">
-
-<h2 style="text-align:center;margin-bottom:20px;color:#ff7cff;">
-Meu Carro dos Sonhos
-</h2>
-
-<img src="carro.png">
-
-</div>
-
-<div class="social">
-
-<a href="#">📷</a>
-<a href="#">🎮</a>
-<a href="#">🎵</a>
-<a href="#">💻</a>
+    <div class="footer">
+        💖 Criado por Anac • 2026 💖
+    </div>
 
 </div>
 
-<div class="footer">
-© 2026 | CYBER PINK PROFILE
-</div>
+</body>
+</html>
 
 </div>
 
