@@ -3,125 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Site Rosa</title>
+<title>Meu Perfil Y2K</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Verdana,sans-serif;
 }
 
 body{
-    background:#ffd6e7;
-    color:#5a0033;
-}
-
-header{
-    background:#ff69b4;
-    color:white;
-    text-align:center;
+    background:linear-gradient(135deg,#6f6dff,#a85cff,#d98cff);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     padding:30px;
 }
 
-nav{
-    background:#ff85c1;
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding:15px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#5a0033;
-}
-
-section{
-    background:white;
-    width:80%;
-    margin:20px auto;
+.container{
+    width:1000px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    border:3px solid #d8c0ff;
+    border-radius:25px;
     padding:20px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    box-shadow:0 0 30px rgba(255,255,255,0.4);
 }
 
-button{
-    background:#ff69b4;
+.topbar{
+    background:linear-gradient(to bottom,#caa8ff,#9f7cff);
+    border-radius:20px;
+    padding:10px;
+    text-align:center;
     color:white;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.menu{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.menu button{
+    flex:1;
     border:none;
-    padding:10px 20px;
-    border-radius:10px;
+    padding:12px;
+    border-radius:30px;
+    background:linear-gradient(to bottom,#ffb1ff,#9b7cff);
+    color:white;
+    font-weight:bold;
     cursor:pointer;
 }
 
-button:hover{
-    background:#ff1493;
+.menu button:hover{
+    transform:scale(1.05);
 }
 
-footer{
-    text-align:center;
-    padding:20px;
-    background:#ff69b4;
+.content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.25);
+    border:2px solid #d9c7ff;
+    border-radius:20px;
+    padding:15px;
+}
+
+.card h2{
     color:white;
-    margin-top:20px;
+    margin-bottom:10px;
 }
-</style>
 
+.card p{
+    color:white;
+    line-height:1.5;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.img{
+    height:140px;
+    border-radius:15px;
+    background:linear-gradient(45deg,#ffd6ff,#a1d7ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#6a00a8;
+    font-weight:bold;
+}
+
+.big{
+    margin-top:10px;
+    height:180px;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:white;
+}
+
+</style>
 </head>
 <body>
 
-<header>
-    <h1>🌸 Meu Site Rosa 🌸</h1>
-    <p>Bem-vindo ao meu primeiro site!</p>
-</header>
+<div class="container">
 
-<nav>
-    <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-</nav>
+    <div class="topbar">
+        ✨ MEU SITE Y2K ✨
+    </div>
 
-<section id="inicio">
-    <h2>🏠 Início</h2>
-    <p>Este é um site simples criado em HTML, CSS e JavaScript em um único arquivo.</p>
-</section>
+    <div class="menu">
+        <button>🏠 Home</button>
+        <button>🎀 Sobre</button>
+        <button>📷 Galeria</button>
+        <button>💌 Contato</button>
+    </div>
 
-<section id="sobre">
-    <h2>💖 Sobre Mim</h2>
-    <p>
-        Aqui você pode colocar informações sobre você, seus estudos,
-        seus projetos e seus objetivos.
-    </p>
-</section>
+    <div class="content">
 
-<section id="contato">
-    <h2>📩 Contato</h2>
-    <p>Clique no botão abaixo:</p>
-    <br>
-    <button onclick="mostrarMensagem()">
-        Clique Aqui
-    </button>
-    <p id="mensagem"></p>
-</section>
+        <div class="card">
+            <h2>💜 Sobre Mim</h2>
 
-<footer>
-    <p>© 2026 - Meu Site Rosa</p>
-</footer>
+            <p>
+                Nome: Seu Nome
+            </p>
 
-<script>
-function mostrarMensagem(){
-    document.getElementById("mensagem").innerHTML =
-    "🌷 Obrigado por visitar meu site! 🌷";
-}
-</script>
+            <br>
+
+            <p>
+                Estudante de Engenharia Ambiental,
+                apaixonado por tecnologia,
+                programação e design.
+            </p>
+
+            <br>
+
+            <div class="gallery">
+                <div class="img">Imagem 1</div>
+                <div class="img">Imagem 2</div>
+            </div>
+
+            <div class="img big">
+                Imagem Destaque
+            </div>
+        </div>
+
+        <div class="card">
+
+            <h2>🌸 Perfil</h2>
+
+            <div class="gallery">
+                <div class="img">Foto</div>
+                <div class="img">Avatar</div>
+                <div class="img">Anime</div>
+                <div class="img">Arte</div>
+            </div>
+
+            <br>
+
+            <h2>⭐ Novidades</h2>
+
+            <p>
+                Bem-vindo ao meu espaço pessoal.
+                Aqui compartilho meus projetos,
+                estudos e hobbies.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        💖 Criado por Você • 2026 💖
+    </div>
+
+</div>
 
 </body>
-</html>
 </html>
