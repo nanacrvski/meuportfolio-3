@@ -1,196 +1,102 @@
-<3
-<html lang="pt-BR">
+OLÁ!
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Perfil Y2K</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Minha Autoavaliação 💞</title>
+    <style>
+        body {
+            background-color: #FFC0CB; /* Rosa claro */
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
+        header {
+            background-color: #ffa3d7; /* Rosa claro */
+            color: #FF1493; /* Rosa intenso */
+            text-align: center;
+            padding: 30px;
+            border-radius: 0 0 50% 50%;
+            position: relative;
+        }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Verdana,sans-serif;
-}
+        header::before {
+            content: "❣️❣️❣️";
+            font-size: 40px;
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-body{
-    background:linear-gradient(135deg,#6f6dff,#a85cff,#d98cff);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px;
-}
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FF69B4; /* Rosa médio */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-.container{
-    width:1000px;
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(10px);
-    border:3px solid #d8c0ff;
-    border-radius:25px;
-    padding:20px;
-    box-shadow:0 0 30px rgba(255,255,255,0.4);
-}
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FF1493; /* Rosa intenso */
+        }
 
-.topbar{
-    background:linear-gradient(to bottom,#caa8ff,#9f7cff);
-    border-radius:20px;
-    padding:10px;
-    text-align:center;
-    color:white;
-    font-weight:bold;
-    margin-bottom:20px;
-}
+        a {
+            font-size: 16px; /* Tamanho de fonte aumentado */
+            color: #FF69B4; /* Rosa médio para links */
+            text-decoration: none; /* Removendo sublinhado padrão */
+        }
 
-.menu{
-    display:flex;
-    gap:15px;
-    margin-bottom:20px;
-}
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #FFC0CB; /* Rosa claro */
+            border-radius: 10px;
+            border: 2px solid #FF1493; /* Rosa intenso para a borda */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-.menu button{
-    flex:1;
-    border:none;
-    padding:12px;
-    border-radius:30px;
-    background:linear-gradient(to bottom,#ffb1ff,#9b7cff);
-    color:white;
-    font-weight:bold;
-    cursor:pointer;
-}
+        img {
+            max-width: 100%; /* A imagem se ajustará automaticamente à largura máxima do contêiner */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            max-height: 200px; /* Defina a altura máxima desejada */
+        }
 
-.menu button:hover{
-    transform:scale(1.05);
-}
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
 
-.content{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-}
-
-.card{
-    background:rgba(255,255,255,0.25);
-    border:2px solid #d9c7ff;
-    border-radius:20px;
-    padding:15px;
-}
-
-.card h2{
-    color:white;
-    margin-bottom:10px;
-}
-
-.card p{
-    color:white;
-    line-height:1.5;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-}
-
-.img{
-    height:140px;
-    border-radius:15px;
-    background:linear-gradient(45deg,#ffd6ff,#a1d7ff);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#6a00a8;
-    font-weight:bold;
-}
-
-.big{
-    margin-top:10px;
-    height:180px;
-}
-
-.footer{
-    margin-top:20px;
-    text-align:center;
-    color:white;
-}
-
-</style>
+        .footer-info {
+            background-color: #FFC0CB;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-
-    <div class="topbar">
-        ✨ site by Anac ✨
+    <header>
+        <h1>Minha Autoavaliação 💗</h1>
+    </header>
+    <main>
+        <section>
+            <h2><span class="icon">💗</span> Autoavaliação 💗</h2>
+            <p>Eu sou Ana Clara Nadaletti e esta é minha autoavaliação do terceiro trimestre.</p>
+           <img src="https://i.pinimg.com/564x/68/03/5b/68035b7d6a969fa0cb9362b6ddca8349.jpg" alt="." />
+        </section>
+    </main>
+    <div class="footer-info">
+        <p>&copy; 2023 <a href="#">Ana Clara Nadaletti Cervinski</a> 🌟</p>
+        <p>Contato: ana.nadaletticervinski@gmail.com</p>
+        <p>Telefone: (54) 9655-6799</p>
     </div>
-
-    <div class="menu">
-        <button>🏠 Home</button>
-        <button>🎀 Sobre</button>
-        <button>📷 Galeria</button>
-        <button>💌 Contato</button>
-    </div>
-
-    <div class="content">
-
-        <div class="card">
-            <h2>💜 Sobre Mim</h2>
-
-            <p>
-                Nome: Ana Clara
-            </p>
-
-            <br>
-
-            <p>
-                Estudante de pedagogia
-            </p>
-
-            <br>
-
-            <div class="gallery">
-                <div class="img">Imagem 1</div>
-                <div class="img">Imagem 2</div>
-            </div>
-
-            <div class="img big">
-                Imagem Destaque
-            </div>
-        </div>
-
-        <div class="card">
-
-            <h2>🌸 Perfil</h2>
-
-          <div class="gallery">
-
-    <div class="img-container">
-        <img src="anime1.png" alt="Anime">
-    </div>
-
-    <div class="img-container">
-        <img src="[anime2.png](https://img.freepik.com/vetores-premium/y2k-fundo-roxo-abstrato-com-grade-e-estrelas-papel-de-parede-quadrado-de-gradiente-de-malha-pastel-design-vetorial-minimalista-de-moda-em-estilo-brutalismo_647468-775.jpg)" alt="Anime">
-    </div>
-
-</div>
-
-<div class="img-container big">
-    <img src="[carro.png](https://i.pinimg.com/736x/b5/99/63/b59963bb3889e2ef90ce4a1750b87c3c.jpg)" alt="BMW">
-</div>
-
-    </div>
-
-    <div class="footer">
-        💖 Criado por Anac • 2026 💖
-    </div>
-
-</div>
-
-</body>
-</html>
-
-</div>
-
 </body>
 </html>
