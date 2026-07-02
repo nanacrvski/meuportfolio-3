@@ -1,531 +1,382 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pink Cyber Profile</title>
+<title>site da anac</title>
 
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-    font-family:'Orbitron', sans-serif;
+box-sizing:border-box;
 }
-
 
 body{
+margin:0;
+min-height:100vh;
 
-    min-height:100vh;
-    background:
-    radial-gradient(circle,#ff8cff,#8b3dff,#241047);
-
-    color:white;
-    overflow-x:hidden;
-
-}
-
-
-/* estrelas */
-
-body::before{
-
-content:"";
-position:fixed;
-width:100%;
-height:100%;
-
-background-image:
-radial-gradient(#fff 1px,transparent 1px);
-
-background-size:40px 40px;
-opacity:.2;
-
-}
-
-
-
-/* janela */
-
-.container{
-
-width:90%;
-max-width:1100px;
-
-margin:50px auto;
-
+/* FUNDO SAKURA */
 background:
-rgba(255,255,255,.15);
+linear-gradient(120deg, rgba(255,228,242,0.75), rgba(255,214,236,0.75), rgba(255,240,248,0.75)),
+url("https://i.pinimg.com/736x/2e/6e/14/2e6e14261aadfde2c2dc7627aac2557f.jpg");
 
-border:3px solid #ff8cff;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 
-border-radius:35px;
+font-family:"Orbitron",sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+}
 
-padding:25px;
+.window{
+width:700px;
+
+/* ROSA PASTEL SUAVE */
+background:
+linear-gradient(135deg,#ffe0f0,#ffd1ea,#fff5fb);
+
+border-radius:25px;
+padding:15px;
 
 box-shadow:
-
-0 0 30px #ff3cff,
-inset 0 0 40px #9d4cff;
-
-backdrop-filter:blur(15px);
-
+0 0 18px #ff9ad5,
+0 0 10px #ffc1e3,
+inset 0 0 15px #ffffff;
 }
 
-
-
-/* barra */
+/* TOPO */
 
 .top{
+height:55px;
 
-height:70px;
-
+/* ROSA PASTEL */
 background:
-linear-gradient(90deg,#ff5eea,#8d55ff);
+linear-gradient(90deg,#ffb6dc,#ffd1ea,#ffe4f2);
 
-border-radius:30px;
+border-radius:20px;
 
 display:flex;
-
+justify-content:center;
 align-items:center;
 
-justify-content:center;
+font-size:22px;
+color:#ffffff;
+text-shadow:0 0 8px #ff9ad5;
 
-font-size:30px;
-
-box-shadow:0 0 20px pink;
-
+position:relative;
 }
-
 
 .buttons{
-
+position:absolute;
+right:20px;
 display:flex;
-justify-content:center;
-gap:20px;
-margin:25px;
-
+gap:10px;
 }
 
+.circle{
+height:35px;
+width:35px;
+border-radius:50%;
 
-button{
-
+/* ROSA CLARO */
 background:
-linear-gradient(#ff9cf7,#8b4cff);
+radial-gradient(circle,#ffffff,#ffd1ea);
 
+border:2px solid #ffb6dc;
+}
+
+/* MENU */
+
+.nav{
+display:flex;
+gap:12px;
+margin:18px 10px;
+}
+
+.nav button{
+flex:1;
 border:none;
-
-padding:15px 35px;
-
+padding:12px;
 border-radius:30px;
 
+/* ROSA PASTEL */
+background:
+linear-gradient(90deg,#ffb6dc,#ffd1ea,#ffe4f2);
+
 color:white;
-
-font-size:16px;
-
+font-family:inherit;
 cursor:pointer;
 
 box-shadow:
-0 0 15px #ff7cff;
-
+inset 0 0 10px #fff,
+0 0 6px #ff9ad5;
 }
 
-
-button:hover{
-
-transform:scale(1.1);
-
+.viewer{
+background:#ffd1ea;
+padding:8px 20px;
+border-radius:20px;
+color:#ff4fa3;
+width:max-content;
+font-size:14px;
+font-weight:bold;
 }
-
-
-
-/* layout */
-
 
 .content{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:25px;
-
-}
-
-
-
-.card{
+margin-top:15px;
 
 background:
-rgba(255,255,255,.12);
+linear-gradient(130deg,#ffffff,#ffeaf5,#fff5fb);
 
-border:2px solid #ff8cff;
-
-border-radius:25px;
-
-padding:25px;
-
-box-shadow:
-0 0 20px #b94cff;
-
-}
-
-
-.title{
-
-font-size:25px;
-
-color:#ffd1ff;
-
-margin-bottom:20px;
-
-}
-
-
-
-/* perfil */
-
-
-.profile{
-
-display:flex;
-
-align-items:center;
-
-gap:20px;
-
-}
-
-
-.avatar{
-
-width:130px;
-height:130px;
-
-border-radius:30px;
-
-background:
-linear-gradient(135deg,#ff7be9,#713cff);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:60px;
-
-box-shadow:
-0 0 25px pink;
-
-}
-
-
-
-/* imagens */
-
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:15px;
-
-}
-
-
-.gallery img{
-
-width:100%;
-
-height:130px;
-
-object-fit:cover;
-
-border-radius:20px;
-
-border:3px solid #ff8cff;
-
-box-shadow:
-0 0 15px #ff55ff;
-
-}
-
-
-
-/* barra inferior */
-
-
-.footer{
-
-margin-top:25px;
-
-background:
-linear-gradient(90deg,#8c42ff,#ff55dd);
-
+border-radius:12px;
 padding:20px;
 
-border-radius:25px;
-
-text-align:center;
-
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
 }
 
+.section{
+background:white;
+padding:12px;
+border-radius:12px;
+box-shadow:0 0 10px #ffb6dc;
+}
 
+.section-title{
+background:linear-gradient(90deg,#ffb6dc,#ffd1ea);
+color:white;
+padding:8px;
+border-radius:10px;
+font-weight:bold;
+}
 
-.social a{
+h1{
+color:#ff4fa3;
+font-size:30px;
+text-shadow:0 0 5px #ffd1ea;
+}
 
-display:inline-block;
+p{
+font-family:Arial;
+color:#b3125c;
+line-height:1.5;
+}
 
-margin:10px;
+/* IMAGENS */
 
-padding:12px 20px;
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+}
 
-background:#ff7be8;
+.image{
+height:110px;
+border-radius:15px;
 
+border:3px solid #ffd1ea;
+
+overflow:hidden;
+
+background:
+linear-gradient(45deg,#ffd1ea,#ffe4f2);
+}
+
+.image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.big-image{
+grid-column:span 2;
+height:130px;
+}
+
+/* REDES */
+
+.social{
+display:flex;
+gap:10px;
+}
+
+.social div{
+width:40px;
+height:40px;
+border-radius:50%;
+background:linear-gradient(90deg,#ffb6dc,#ffd1ea);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+box-shadow:0 0 8px #ffb6dc;
+}
+
+/* FOOTER */
+
+.footer{
+height:55px;
+margin-top:15px;
 border-radius:20px;
 
+background:
+linear-gradient(90deg,#ffb6dc,#ffd1ea,#ffe4f2);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:20px;
 color:white;
-
-text-decoration:none;
-
-box-shadow:
-0 0 15px pink;
-
+text-shadow:0 0 8px #ff9ad5;
 }
 
+/* RESPONSIVO */
 
-@media(max-width:800px){
+@media(max-width:700px){
+.window{
+width:95%;
+}
 
 .content{
-
 grid-template-columns:1fr;
-
 }
-
 }
-
-
 
 </style>
 
 </head>
 
-
 <body>
 
-
-
-<div class="container">
-
+<div class="window">
 
 <div class="top">
-
-✦ PINK CYBER WORLD ✦
-
-</div>
-
-
+Ana Clara
 
 <div class="buttons">
-
-<button>HOME</button>
-<button>PROJECTS</button>
-<button>METRICS</button>
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+</div>
 
 </div>
 
+<div class="nav">
+<button>sobre mim</button>
+<button>artes</button>
+<button>redess</button>
+</div>
 
-
+<div class="viewer">
+anac
+</div>
 
 <div class="content">
 
-
 <div>
 
+<div class="section">
 
-<div class="card">
-
-
-<div class="title">
-
-💜 ABOUT ME
-
+<div class="section-title">
+ⓘ | сигарета
 </div>
 
+<h1>▣ ana clara</h1>
 
-<div class="profile">
-
-
-<div class="avatar">
-
-☆
-
-
-</div>
-
-
-<div>
-
-<h2>ANA CLARA</h2>
+<p>oiiiii 💗</p>
 
 <p>
-Digital creator ✦ student ✦ dreamer
-</p>
-
-<p>
-
-♡ Welcome to my little pink universe ♡
-
+aaaaaa.
+<br><br>
+aaaaaa
 </p>
 
 </div>
-
-
-</div>
-
-
-</div>
-
-
 
 <br>
-
-
-
-<div class="card">
-
-<div class="title">
-
-🌸 INFORMATION
-
-</div>
-
-
-<p>
-
-✦ Web designer<br><br>
-
-✦ Creative projects<br><br>
-
-✦ Technology lover<br><br>
-
-✦ Pink aesthetic enthusiast
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div>
-
-
-<div class="card">
-
-
-<div class="title">
-
-🪐 GALLERY
-
-</div>
-
 
 <div class="gallery">
 
+<div class="image">
+<img src="https://i.pinimg.com/474x/d8/a9/f3/d8a9f34eed4cbfbf19261395d4166004.jpg">
+</div>
 
-<img src="https://picsum.photos/300/200?1">
+<div class="image">
+<img src="https://i.ebayimg.com/images/g/8j0AAOSwU-plOF5h/s-l1200.jpg">
+</div>
 
-<img src="https://picsum.photos/300/200?2">
-
-<img src="https://picsum.photos/300/200?3">
-
-<img src="https://picsum.photos/300/200?4">
-
+<div class="image big-image">
+<img src="https://images2.alphacoders.com/121/1212645.jpg">
+</div>
 
 </div>
 
-
 </div>
 
+<div>
 
+<div class="social">
+<div>◎</div>
+<div>▶</div>
+<div>♪</div>
+</div>
 
 <br>
 
+<div class="gallery">
 
-<div class="card">
+<div class="image">
+<img src="https://i.pinimg.com/736x/29/3d/b6/293db6f3b9901c375ef8de2bbb71575d.jpg">
+</div>
 
+<div class="image">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3jqSkOdfXctz78kooqhL1WeSMm6oNmVZsQ&s">
+</div>
 
-<div class="title">
+<div class="image">
+<img src="https://images.steamusercontent.com/ugc/4105585931633010286/2BF23EB79F3ABF6F7721714F6DFC7F9027992548/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+</div>
 
-💿 BEFORE FOLLOWING
+<div class="image">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jQg4ljrjbx2feMUvFpEOwPL3DigEk0EHJg&s">
+</div>
 
 </div>
 
+<br>
+
+<div class="section">
+
+<div class="section-title">.</div>
+
+<h2>▣ anac</h2>
 
 <p>
-
-Please respect this space ✨
-
-<br><br>
-
-I create, design and explore
-new digital worlds.
-
+.<br>
+<strong>.</strong><br>
+.
 </p>
 
-
+</div>
 
 </div>
 
-
 </div>
-
-
-
-</div>
-
-
-
 
 <div class="footer">
-
-
-<div class="social">
-
-
-<a href="#">Instagram</a>
-
-<a href="#">Github</a>
-
-<a href="#">TikTok</a>
-
-
+Ana Clara
 </div>
 
-
-© 2026 Pink Cyber Profile
-
-
 </div>
-
-
-
-</div>
-
 
 </body>
 </html>
+
