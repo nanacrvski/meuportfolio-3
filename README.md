@@ -1,253 +1,170 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>site da anac</title>
+
+<title>Hello Kitty Kawaii Game</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
 *{
+margin:0;
+padding:0;
 box-sizing:border-box;
+font-family:'Fredoka',sans-serif;
 }
 
 body{
-margin:0;
-min-height:100vh;
 
-/* FUNDO SAKURA */
-background:
-linear-gradient(120deg, rgba(255,228,242,0.75), rgba(255,214,236,0.75), rgba(255,240,248,0.75)),
-url("https://i.pinimg.com/736x/2e/6e/14/2e6e14261aadfde2c2dc7627aac2557f.jpg");
-
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-
-font-family:"Orbitron",sans-serif;
+background:linear-gradient(180deg,#ffd8ec,#ffc2df,#fff0f7);
+overflow:hidden;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 }
 
-.window{
-width:700px;
+.container{
 
-/* ROSA PASTEL SUAVE */
-background:
-linear-gradient(135deg,#ffe0f0,#ffd1ea,#fff5fb);
+width:900px;
+height:600px;
 
-border-radius:25px;
-padding:15px;
+background:white;
+border-radius:35px;
+border:8px solid #ff9cc8;
+box-shadow:0 0 35px #ffb8d9;
 
-box-shadow:
-0 0 18px #ff9ad5,
-0 0 10px #ffc1e3,
-inset 0 0 15px #ffffff;
-}
-
-/* TOPO */
-
-.top{
-height:55px;
-
-/* ROSA PASTEL */
-background:
-linear-gradient(90deg,#ffb6dc,#ffd1ea,#ffe4f2);
-
-border-radius:20px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-size:22px;
-color:#ffffff;
-text-shadow:0 0 8px #ff9ad5;
-
-position:relative;
-}
-
-.buttons{
-position:absolute;
-right:20px;
-display:flex;
-gap:10px;
-}
-
-.circle{
-height:35px;
-width:35px;
-border-radius:50%;
-
-/* ROSA CLARO */
-background:
-radial-gradient(circle,#ffffff,#ffd1ea);
-
-border:2px solid #ffb6dc;
-}
-
-/* MENU */
-
-.nav{
-display:flex;
-gap:12px;
-margin:18px 10px;
-}
-
-.nav button{
-flex:1;
-border:none;
-padding:12px;
-border-radius:30px;
-
-/* ROSA PASTEL */
-background:
-linear-gradient(90deg,#ffb6dc,#ffd1ea,#ffe4f2);
-
-color:white;
-font-family:inherit;
-cursor:pointer;
-
-box-shadow:
-inset 0 0 10px #fff,
-0 0 6px #ff9ad5;
-}
-
-.viewer{
-background:#ffd1ea;
-padding:8px 20px;
-border-radius:20px;
-color:#ff4fa3;
-width:max-content;
-font-size:14px;
-font-weight:bold;
-}
-
-.content{
-margin-top:15px;
-
-background:
-linear-gradient(130deg,#ffffff,#ffeaf5,#fff5fb);
-
-border-radius:12px;
+text-align:center;
 padding:20px;
 
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
+position:relative;
 
-.section{
-background:white;
-padding:12px;
-border-radius:12px;
-box-shadow:0 0 10px #ffb6dc;
-}
-
-.section-title{
-background:linear-gradient(90deg,#ffb6dc,#ffd1ea);
-color:white;
-padding:8px;
-border-radius:10px;
-font-weight:bold;
 }
 
 h1{
-color:#ff4fa3;
-font-size:30px;
-text-shadow:0 0 5px #ffd1ea;
+
+font-size:45px;
+color:#ff4b95;
+margin-bottom:10px;
+
 }
 
 p{
-font-family:Arial;
-color:#b3125c;
-line-height:1.5;
+
+font-size:20px;
+color:#ff74af;
+
 }
 
-/* IMAGENS */
+#game{
 
-.gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:8px;
-}
+margin:auto;
+margin-top:20px;
 
-.image{
-height:110px;
-border-radius:15px;
+width:760px;
+height:350px;
 
-border:3px solid #ffd1ea;
+background:#fff5fa;
+
+border-radius:25px;
+
+border:4px dashed #ffb6d6;
+
+position:relative;
 
 overflow:hidden;
 
-background:
-linear-gradient(45deg,#ffd1ea,#ffe4f2);
 }
 
-.image img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
+#kitty{
+
+position:absolute;
+
+font-size:65px;
+
+cursor:pointer;
+
+transition:.2s;
+
+user-select:none;
+
 }
 
-.big-image{
-grid-column:span 2;
-height:130px;
+#kitty:hover{
+
+transform:scale(1.15);
+
 }
 
-/* REDES */
+.info{
 
-.social{
+margin-top:20px;
+
 display:flex;
-gap:10px;
-}
 
-.social div{
-width:40px;
-height:40px;
-border-radius:50%;
-background:linear-gradient(90deg,#ffb6dc,#ffd1ea);
-color:white;
-display:flex;
-align-items:center;
 justify-content:center;
+
+gap:60px;
+
+font-size:25px;
+
+color:#ff4b95;
+
 font-weight:bold;
-box-shadow:0 0 8px #ffb6dc;
+
 }
 
-/* FOOTER */
+button{
 
-.footer{
-height:55px;
-margin-top:15px;
-border-radius:20px;
+margin-top:20px;
 
-background:
-linear-gradient(90deg,#ffb6dc,#ffd1ea,#ffe4f2);
-
-display:flex;
-align-items:center;
-justify-content:center;
+padding:15px 35px;
 
 font-size:20px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ff65aa;
+
 color:white;
-text-shadow:0 0 8px #ff9ad5;
+
+cursor:pointer;
+
+transition:.3s;
+
 }
 
-/* RESPONSIVO */
+button:hover{
 
-@media(max-width:700px){
-.window{
-width:95%;
+transform:scale(1.08);
+
+background:#ff4a98;
+
 }
 
-.content{
-grid-template-columns:1fr;
+.falling{
+
+position:absolute;
+
+animation:fall linear infinite;
+
 }
+
+@keyframes fall{
+
+0%{
+transform:translateY(-120px);
+}
+
+100%{
+transform:translateY(120vh);
+}
+
 }
 
 </style>
@@ -256,127 +173,143 @@ grid-template-columns:1fr;
 
 <body>
 
-<div class="window">
+<div class="container">
 
-<div class="top">
-Ana Clara
+<h1>🎀 Hello Kitty 🎀</h1>
 
-<div class="buttons">
-<div class="circle"></div>
-<div class="circle"></div>
-<div class="circle"></div>
+<p>Clique na Hello Kitty antes que ela fuja!</p>
+
+<div id="game">
+
+<div id="kitty">🐱🎀</div>
+
+</div>
+
+<div class="info">
+
+<div>Pontos:
+<span id="score">0</span>
+</div>
+
+<div>Tempo:
+<span id="time">30</span>
 </div>
 
 </div>
 
-<div class="nav">
-<button>sobre mim</button>
-<button>artes</button>
-<button>redess</button>
-</div>
-
-<div class="viewer">
-anac
-</div>
-
-<div class="content">
-
-<div>
-
-<div class="section">
-
-<div class="section-title">
-ⓘ | сигарета
-</div>
-
-<h1>▣ ana clara</h1>
-
-<p>oiiiii 💗</p>
-
-<p>
-aaaaaa.
-<br><br>
-aaaaaa
-</p>
+<button onclick="startGame()">
+Começar
+</button>
 
 </div>
 
-<br>
+<script>
 
-<div class="gallery">
+const kitty=document.getElementById("kitty");
 
-<div class="image">
-<img src="https://i.pinimg.com/474x/d8/a9/f3/d8a9f34eed4cbfbf19261395d4166004.jpg">
-</div>
+const game=document.getElementById("game");
 
-<div class="image">
-<img src="https://i.ebayimg.com/images/g/8j0AAOSwU-plOF5h/s-l1200.jpg">
-</div>
+const scoreText=document.getElementById("score");
 
-<div class="image big-image">
-<img src="https://images2.alphacoders.com/121/1212645.jpg">
-</div>
+const timeText=document.getElementById("time");
 
-</div>
+let score=0;
 
-</div>
+let time=30;
 
-<div>
+let playing=false;
 
-<div class="social">
-<div>◎</div>
-<div>▶</div>
-<div>♪</div>
-</div>
+let move;
 
-<br>
+let timer;
 
-<div class="gallery">
+function randomPosition(){
 
-<div class="image">
-<img src="https://i.pinimg.com/736x/29/3d/b6/293db6f3b9901c375ef8de2bbb71575d.jpg">
-</div>
+let x=Math.random()*(game.clientWidth-80);
 
-<div class="image">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3jqSkOdfXctz78kooqhL1WeSMm6oNmVZsQ&s">
-</div>
+let y=Math.random()*(game.clientHeight-80);
 
-<div class="image">
-<img src="https://images.steamusercontent.com/ugc/4105585931633010286/2BF23EB79F3ABF6F7721714F6DFC7F9027992548/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-</div>
+kitty.style.left=x+"px";
 
-<div class="image">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jQg4ljrjbx2feMUvFpEOwPL3DigEk0EHJg&s">
-</div>
+kitty.style.top=y+"px";
 
-</div>
+}
 
-<br>
+kitty.onclick=function(){
 
-<div class="section">
+if(!playing)return;
 
-<div class="section-title">.</div>
+score++;
 
-<h2>▣ anac</h2>
+scoreText.innerHTML=score;
 
-<p>
-.<br>
-<strong>.</strong><br>
-.
-</p>
+randomPosition();
 
-</div>
+}
 
-</div>
+function startGame(){
 
-</div>
+clearInterval(move);
 
-<div class="footer">
-Ana Clara
-</div>
+clearInterval(timer);
 
-</div>
+score=0;
+
+time=30;
+
+playing=true;
+
+scoreText.innerHTML=0;
+
+timeText.innerHTML=30;
+
+randomPosition();
+
+move=setInterval(randomPosition,700);
+
+timer=setInterval(function(){
+
+time--;
+
+timeText.innerHTML=time;
+
+if(time<=0){
+
+playing=false;
+
+clearInterval(move);
+
+clearInterval(timer);
+
+alert("🎉 Você fez "+score+" pontos! 💖");
+
+}
+
+},1000);
+
+}
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.className="falling";
+
+heart.innerHTML=Math.random()>0.5?"💖":"🌸";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*20)+"px";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+heart.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
 
 </body>
 </html>
-
