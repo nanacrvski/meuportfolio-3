@@ -1,169 +1,416 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Hello Kitty Kawaii Game</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<title>Rainbow Vista</title>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Fredoka',sans-serif;
+font-family:'Quicksand',sans-serif;
 }
 
 body{
 
-background:linear-gradient(180deg,#ffd8ec,#ffc2df,#fff0f7);
-overflow:hidden;
+background:linear-gradient(
+-45deg,
+#ff0000,
+#ff8800,
+#ffee00,
+#00ff55,
+#00c8ff,
+#0066ff,
+#7b00ff,
+#ff0095);
+
+background-size:600% 600%;
+
+animation:rainbow 20s ease infinite;
+
 height:100vh;
+
 display:flex;
 justify-content:center;
 align-items:center;
-}
-
-.container{
-
-width:900px;
-height:600px;
-
-background:white;
-border-radius:35px;
-border:8px solid #ff9cc8;
-box-shadow:0 0 35px #ffb8d9;
-
-text-align:center;
-padding:20px;
-
-position:relative;
-
-}
-
-h1{
-
-font-size:45px;
-color:#ff4b95;
-margin-bottom:10px;
-
-}
-
-p{
-
-font-size:20px;
-color:#ff74af;
-
-}
-
-#game{
-
-margin:auto;
-margin-top:20px;
-
-width:760px;
-height:350px;
-
-background:#fff5fa;
-
-border-radius:25px;
-
-border:4px dashed #ffb6d6;
-
-position:relative;
 
 overflow:hidden;
 
 }
 
-#kitty{
+@keyframes rainbow{
 
-position:absolute;
-
-font-size:65px;
-
-cursor:pointer;
-
-transition:.2s;
-
-user-select:none;
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 
 }
 
-#kitty:hover{
+.window{
 
-transform:scale(1.15);
+width:1050px;
+height:650px;
+
+background:rgba(255,255,255,.35);
+
+backdrop-filter:blur(18px);
+
+border-radius:20px;
+
+border:2px solid rgba(255,255,255,.6);
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.35),
+
+inset 0 0 30px rgba(255,255,255,.3);
+
+overflow:hidden;
 
 }
 
-.info{
+.topbar{
 
-margin-top:20px;
+height:60px;
 
 display:flex;
+align-items:center;
 
-justify-content:center;
+padding:15px;
 
-gap:60px;
-
-font-size:25px;
-
-color:#ff4b95;
-
-font-weight:bold;
+background:linear-gradient(
+90deg,
+rgba(255,0,100,.6),
+rgba(255,150,0,.6),
+rgba(255,255,0,.6),
+rgba(0,255,180,.6),
+rgba(0,180,255,.6),
+rgba(120,0,255,.6)
+);
 
 }
 
-button{
+.circle{
 
-margin-top:20px;
+width:18px;
+height:18px;
+border-radius:50%;
+margin-right:10px;
 
-padding:15px 35px;
+box-shadow:0 0 12px white;
 
-font-size:20px;
+}
+
+.red{background:#ff5f57;}
+.yellow{background:#ffbd2f;}
+.green{background:#28ca42;}
+
+.search{
+
+margin-left:20px;
+flex:1;
+
+height:35px;
 
 border:none;
 
-border-radius:30px;
+border-radius:20px;
 
-background:#ff65aa;
+padding-left:20px;
+
+font-size:15px;
+
+outline:none;
+
+background:rgba(255,255,255,.7);
+
+}
+
+.content{
+
+display:flex;
+
+height:530px;
+
+}
+
+.sidebar{
+
+width:260px;
+
+background:rgba(255,255,255,.25);
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.avatar{
+
+width:170px;
+height:170px;
+
+margin:auto;
+
+border-radius:20px;
+
+background:linear-gradient(
+45deg,
+red,
+orange,
+yellow,
+lime,
+cyan,
+blue,
+violet);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:90px;
 
 color:white;
 
+box-shadow:0 0 30px rgba(255,255,255,.6);
+
+}
+
+.sidebar h2{
+
+margin-top:20px;
+
+font-size:28px;
+
+color:white;
+
+}
+
+.sidebar p{
+
+margin-top:10px;
+
+color:white;
+
+}
+
+.menu{
+
+margin-top:30px;
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+.menu button{
+
+height:48px;
+
+border:none;
+
+border-radius:15px;
+
+font-size:16px;
+
+font-weight:bold;
+
 cursor:pointer;
+
+color:white;
+
+background:linear-gradient(
+90deg,
+red,
+orange,
+yellow,
+lime,
+cyan,
+blue,
+violet);
+
+background-size:300%;
+
+animation:rainbow 8s linear infinite;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
 
 transition:.3s;
 
 }
 
-button:hover{
+.menu button:hover{
 
-transform:scale(1.08);
-
-background:#ff4a98;
+transform:scale(1.05);
 
 }
 
-.falling{
+.main{
 
-position:absolute;
+flex:1;
 
-animation:fall linear infinite;
+padding:25px;
+
+overflow:auto;
 
 }
 
-@keyframes fall{
+.banner{
 
-0%{
-transform:translateY(-120px);
+height:190px;
+
+border-radius:20px;
+
+background:linear-gradient(
+120deg,
+rgba(255,0,0,.8),
+rgba(255,255,0,.8),
+rgba(0,255,255,.8),
+rgba(0,0,255,.8),
+rgba(255,0,255,.8)
+);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:50px;
+
+color:white;
+
+font-weight:bold;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
 }
 
-100%{
-transform:translateY(120vh);
+.cards{
+
+margin-top:25px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
 }
+
+.card{
+
+background:rgba(255,255,255,.45);
+
+border-radius:20px;
+
+padding:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin-bottom:10px;
+
+background:linear-gradient(
+90deg,
+red,
+orange,
+yellow,
+green,
+cyan,
+blue,
+violet);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+font-size:22px;
+
+}
+
+.card p{
+
+line-height:1.7;
+
+color:#333;
+
+}
+
+.footer{
+
+height:60px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px;
+
+background:rgba(255,255,255,.25);
+
+}
+
+.footer button{
+
+width:180px;
+height:40px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-size:16px;
+
+color:white;
+
+font-weight:bold;
+
+background:linear-gradient(
+90deg,
+red,
+orange,
+yellow,
+green,
+cyan,
+blue,
+violet);
+
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.icons{
+
+font-size:24px;
+
+color:white;
+
+display:flex;
+
+gap:15px;
 
 }
 
@@ -173,143 +420,106 @@ transform:translateY(120vh);
 
 <body>
 
-<div class="container">
+<div class="window">
 
-<h1>🎀 Hello Kitty 🎀</h1>
+<div class="topbar">
 
-<p>Clique na Hello Kitty antes que ela fuja!</p>
+<div class="circle red"></div>
+<div class="circle yellow"></div>
+<div class="circle green"></div>
 
-<div id="game">
-
-<div id="kitty">🐱🎀</div>
-
-</div>
-
-<div class="info">
-
-<div>Pontos:
-<span id="score">0</span>
-</div>
-
-<div>Tempo:
-<span id="time">30</span>
-</div>
+<input class="search" placeholder="Pesquisar...">
 
 </div>
 
-<button onclick="startGame()">
-Começar
-</button>
+<div class="content">
+
+<div class="sidebar">
+
+<div class="avatar">☺</div>
+
+<h2>Rainbow User</h2>
+
+<p>Website estilo Vista</p>
+
+<div class="menu">
+
+<button>Home</button>
+
+<button>Galeria</button>
+
+<button>Projetos</button>
+
+<button>Contato</button>
 
 </div>
 
-<script>
+</div>
 
-const kitty=document.getElementById("kitty");
+<div class="main">
 
-const game=document.getElementById("game");
+<div class="banner">
 
-const scoreText=document.getElementById("score");
+🌈 Rainbow Vista
 
-const timeText=document.getElementById("time");
+</div>
 
-let score=0;
+<div class="cards">
 
-let time=30;
+<div class="card">
 
-let playing=false;
+<h3>Sobre</h3>
 
-let move;
+<p>
+.
+</p>
 
-let timer;
+</div>
 
-function randomPosition(){
+<div class="card">
 
-let x=Math.random()*(game.clientWidth-80);
+<h3>Galeria</h3>
 
-let y=Math.random()*(game.clientHeight-80);
+<p>
+Você pode colocar imagens,
+GIFs,
+ícones,
+ou qualquer conteúdo aqui.
+</p>
 
-kitty.style.left=x+"px";
+</div>
 
-kitty.style.top=y+"px";
+<div class="card">
 
-}
+<h3>Novidades</h3>
 
-kitty.onclick=function(){
+<p>
+Todos os elementos utilizam
+gradientes animados
+e brilhos suaves.
+</p>
 
-if(!playing)return;
+</div>
 
-score++;
+</div>
 
-scoreText.innerHTML=score;
+</div>
 
-randomPosition();
+</div>
 
-}
+<div class="footer">
 
-function startGame(){
+<button>Entrar</button>
 
-clearInterval(move);
+<div class="icons">
 
-clearInterval(timer);
+🌈 ⭐ 💙 🎨
 
-score=0;
+</div>
 
-time=30;
+</div>
 
-playing=true;
-
-scoreText.innerHTML=0;
-
-timeText.innerHTML=30;
-
-randomPosition();
-
-move=setInterval(randomPosition,700);
-
-timer=setInterval(function(){
-
-time--;
-
-timeText.innerHTML=time;
-
-if(time<=0){
-
-playing=false;
-
-clearInterval(move);
-
-clearInterval(timer);
-
-alert("🎉 Você fez "+score+" pontos! 💖");
-
-}
-
-},1000);
-
-}
-
-for(let i=0;i<40;i++){
-
-let heart=document.createElement("div");
-
-heart.className="falling";
-
-heart.innerHTML=Math.random()>0.5?"💖":"🌸";
-
-heart.style.left=Math.random()*100+"vw";
-
-heart.style.fontSize=(20+Math.random()*20)+"px";
-
-heart.style.animationDuration=(5+Math.random()*5)+"s";
-
-heart.style.animationDelay=Math.random()*5+"s";
-
-document.body.appendChild(heart);
-
-}
-
-</script>
+</div>
 
 </body>
 </html>
