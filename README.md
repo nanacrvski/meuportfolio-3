@@ -1,525 +1,885 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rainbow Vista</title>
+<title>Cyber Anime World ✦</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+
 
 <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Quicksand',sans-serif;
+font-family:'Fredoka',sans-serif;
 }
+
 
 body{
 
-background:linear-gradient(
--45deg,
-#ff0000,
-#ff8800,
-#ffee00,
-#00ff55,
-#00c8ff,
-#0066ff,
-#7b00ff,
-#ff0095);
+min-height:100vh;
 
-background-size:600% 600%;
+background:
 
-animation:rainbow 20s ease infinite;
-
-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-overflow:hidden;
-
-}
-
-@keyframes rainbow{
-
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-
-}
-
-.window{
-
-width:1050px;
-height:650px;
-
-background:rgba(255,255,255,.35);
-
-backdrop-filter:blur(18px);
-
-border-radius:20px;
-
-border:2px solid rgba(255,255,255,.6);
-
-box-shadow:
-
-0 20px 60px rgba(0,0,0,.35),
-
-inset 0 0 30px rgba(255,255,255,.3);
-
-overflow:hidden;
-
-}
-
-.topbar{
-
-height:60px;
-
-display:flex;
-align-items:center;
-
-padding:15px;
-
-background:linear-gradient(
-90deg,
-rgba(255,0,100,.6),
-rgba(255,150,0,.6),
-rgba(255,255,0,.6),
-rgba(0,255,180,.6),
-rgba(0,180,255,.6),
-rgba(120,0,255,.6)
+linear-gradient(
+135deg,
+#59d9ff,
+#9b8cff,
+#ff7ddc,
+#ffe3fa
 );
 
-}
+background-size:400% 400%;
 
-.circle{
+animation:bg 12s infinite;
 
-width:18px;
-height:18px;
-border-radius:50%;
-margin-right:10px;
-
-box-shadow:0 0 12px white;
-
-}
-
-.red{background:#ff5f57;}
-.yellow{background:#ffbd2f;}
-.green{background:#28ca42;}
-
-.search{
-
-margin-left:20px;
-flex:1;
-
-height:35px;
-
-border:none;
-
-border-radius:20px;
-
-padding-left:20px;
-
-font-size:15px;
-
-outline:none;
-
-background:rgba(255,255,255,.7);
-
-}
-
-.content{
-
-display:flex;
-
-height:530px;
-
-}
-
-.sidebar{
-
-width:260px;
-
-background:rgba(255,255,255,.25);
-
-padding:20px;
-
-text-align:center;
-
-}
-
-.avatar{
-
-width:170px;
-height:170px;
-
-margin:auto;
-
-border-radius:20px;
-
-background:linear-gradient(
-45deg,
-red,
-orange,
-yellow,
-lime,
-cyan,
-blue,
-violet);
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-size:90px;
-
-color:white;
-
-box-shadow:0 0 30px rgba(255,255,255,.6);
-
-}
-
-.sidebar h2{
-
-margin-top:20px;
-
-font-size:28px;
+overflow-x:hidden;
 
 color:white;
 
 }
 
-.sidebar p{
 
-margin-top:10px;
 
-color:white;
+@keyframes bg{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
 
 }
 
-.menu{
 
-margin-top:30px;
 
-display:flex;
-flex-direction:column;
-gap:15px;
 
-}
+/* EFEITOS */
 
-.menu button{
 
-height:48px;
+body:before{
 
-border:none;
+content:"";
 
-border-radius:15px;
+position:fixed;
 
-font-size:16px;
+inset:0;
 
-font-weight:bold;
+background:
 
-cursor:pointer;
+radial-gradient(circle,#fff8,transparent 20%);
 
-color:white;
-
-background:linear-gradient(
-90deg,
-red,
-orange,
-yellow,
-lime,
-cyan,
-blue,
-violet);
-
-background-size:300%;
-
-animation:rainbow 8s linear infinite;
-
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-
-transition:.3s;
+pointer-events:none;
 
 }
 
-.menu button:hover{
 
-transform:scale(1.05);
 
-}
 
 .main{
 
-flex:1;
 
-padding:25px;
+width:95%;
 
-overflow:auto;
+max-width:1500px;
+
+margin:30px auto;
+
+
+background:
+
+rgba(255,255,255,.20);
+
+
+backdrop-filter:blur(20px);
+
+
+border:
+
+3px solid #ffffff70;
+
+
+border-radius:35px;
+
+
+box-shadow:
+
+0 0 50px #ff7beaaa;
+
+
+overflow:hidden;
+
 
 }
 
-.banner{
 
-height:190px;
 
-border-radius:20px;
 
-background:linear-gradient(
-120deg,
-rgba(255,0,0,.8),
-rgba(255,255,0,.8),
-rgba(0,255,255,.8),
-rgba(0,0,255,.8),
-rgba(255,0,255,.8)
-);
+
+/* TOPO */
+
+
+header{
+
+
+height:90px;
 
 display:flex;
-justify-content:center;
+
 align-items:center;
-
-font-size:50px;
-
-color:white;
-
-font-weight:bold;
-
-box-shadow:0 10px 25px rgba(0,0,0,.25);
-
-}
-
-.cards{
-
-margin-top:25px;
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:20px;
-
-}
-
-.card{
-
-background:rgba(255,255,255,.45);
-
-border-radius:20px;
-
-padding:20px;
-
-box-shadow:0 8px 20px rgba(0,0,0,.2);
-
-transition:.4s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.card h3{
-
-margin-bottom:10px;
-
-background:linear-gradient(
-90deg,
-red,
-orange,
-yellow,
-green,
-cyan,
-blue,
-violet);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
-font-size:22px;
-
-}
-
-.card p{
-
-line-height:1.7;
-
-color:#333;
-
-}
-
-.footer{
-
-height:60px;
-
-display:flex;
 
 justify-content:space-between;
 
-align-items:center;
+padding:20px 40px;
 
-padding:15px;
 
-background:rgba(255,255,255,.25);
+background:#ffffff30;
 
-}
-
-.footer button{
-
-width:180px;
-height:40px;
-
-border:none;
-
-border-radius:12px;
-
-cursor:pointer;
-
-font-size:16px;
-
-color:white;
-
-font-weight:bold;
-
-background:linear-gradient(
-90deg,
-red,
-orange,
-yellow,
-green,
-cyan,
-blue,
-violet);
-
-box-shadow:0 8px 20px rgba(0,0,0,.2);
 
 }
 
-.icons{
 
-font-size:24px;
+
+
+.logo{
+
+
+font-family:Orbitron;
+
+font-size:35px;
+
+
+text-shadow:
+
+0 0 15px white;
+
+
+}
+
+
+
+
+.menu a{
+
+
+text-decoration:none;
 
 color:white;
+
+margin:10px;
+
+padding:10px 20px;
+
+
+border-radius:30px;
+
+
+background:#ffffff35;
+
+
+}
+
+
+
+.menu a:hover{
+
+
+background:#ff8fe5;
+
+
+box-shadow:0 0 20px white;
+
+
+}
+
+
+
+
+
+
+
+/* PAINEL PRINCIPAL */
+
+
+.content{
+
+
+display:grid;
+
+
+grid-template-columns:
+
+100px 1fr 350px;
+
+
+gap:20px;
+
+
+padding:25px;
+
+
+}
+
+
+
+
+
+/* MENU LATERAL */
+
+
+.side{
+
 
 display:flex;
 
+flex-direction:column;
+
 gap:15px;
+
 
 }
 
+
+
+.side div{
+
+
+height:70px;
+
+border-radius:20px;
+
+
+background:#ffffff40;
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+font-size:30px;
+
+
+border:2px solid white;
+
+
+}
+
+
+
+
+/* AREA CENTRAL */
+
+
+.screen{
+
+
+background:#ffffff25;
+
+
+border-radius:30px;
+
+
+padding:25px;
+
+
+border:
+
+2px solid #ffffff80;
+
+
+}
+
+
+
+
+.banner{
+
+
+height:300px;
+
+
+border-radius:25px;
+
+
+background:
+
+
+linear-gradient(
+
+135deg,
+
+#7ee8ff,
+
+#ff9be8
+
+);
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+font-size:55px;
+
+
+font-family:Orbitron;
+
+
+text-align:center;
+
+
+box-shadow:
+
+0 0 30px white;
+
+
+}
+
+
+
+
+.search{
+
+
+margin:20px 0;
+
+
+padding:15px;
+
+
+border-radius:20px;
+
+
+background:white;
+
+
+color:#9d75ff;
+
+
+font-weight:bold;
+
+
+}
+
+
+
+
+.cards{
+
+
+display:grid;
+
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+
+gap:20px;
+
+
+}
+
+
+
+
+
+.card{
+
+
+padding:20px;
+
+
+border-radius:25px;
+
+
+background:#ffffff35;
+
+
+border:2px solid #ffffff70;
+
+
+}
+
+
+
+.card h2{
+
+
+font-family:Orbitron;
+
+
+color:white;
+
+
+}
+
+
+
+
+/* PERSONAGEM */
+
+
+.character{
+
+
+background:#ffffff30;
+
+
+border-radius:30px;
+
+
+padding:25px;
+
+
+text-align:center;
+
+
+}
+
+
+
+.avatar{
+
+
+height:240px;
+
+
+border-radius:25px;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#8eeaff,
+
+#ffb6e8
+
+);
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+font-size:100px;
+
+
+border:3px solid white;
+
+
+box-shadow:
+
+0 0 30px white;
+
+
+}
+
+
+
+.character h1{
+
+
+margin-top:20px;
+
+
+font-family:Orbitron;
+
+
+}
+
+
+
+
+
+.stats{
+
+
+margin-top:20px;
+
+
+background:#ffffff30;
+
+
+padding:15px;
+
+
+border-radius:20px;
+
+
+}
+
+
+
+
+
+.music{
+
+
+margin-top:20px;
+
+
+padding:20px;
+
+
+border-radius:25px;
+
+
+background:#ff7edb66;
+
+
+}
+
+
+
+.bar{
+
+
+height:10px;
+
+
+background:white;
+
+
+border-radius:20px;
+
+
+animation:music 4s infinite;
+
+
+}
+
+
+
+@keyframes music{
+
+
+50%{
+
+width:100%;
+
+}
+
+}
+
+
+
+
+/* RODAPE */
+
+
+footer{
+
+
+text-align:center;
+
+padding:25px;
+
+
+background:#ffffff25;
+
+
+font-size:18px;
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.content{
+
+grid-template-columns:1fr;
+
+}
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+.menu{
+
+display:none;
+
+}
+
+
+}
+
+
+
 </style>
+
 
 </head>
 
+
+
 <body>
 
-<div class="window">
-
-<div class="topbar">
-
-<div class="circle red"></div>
-<div class="circle yellow"></div>
-<div class="circle green"></div>
-
-<input class="search" placeholder="Pesquisar...">
-
-</div>
-
-<div class="content">
-
-<div class="sidebar">
-
-<div class="avatar">☺</div>
-
-<h2>Rainbow User</h2>
-
-<p>Website estilo Vista</p>
-
-<div class="menu">
-
-<button>Home</button>
-
-<button>Galeria</button>
-
-<button>Projetos</button>
-
-<button>Contato</button>
-
-</div>
-
-</div>
 
 <div class="main">
 
-<div class="banner">
 
-🌈 Rainbow Vista
+
+<header>
+
+
+<div class="logo">
+
+✦ NEON WORLD
 
 </div>
+
+
+
+<div class="menu">
+
+<a href="#">Home</a>
+
+<a href="#">Perfil</a>
+
+<a href="#">Galeria</a>
+
+<a href="#">Links</a>
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+<div class="content">
+
+
+
+<div class="side">
+
+
+<div>♡</div>
+
+<div>音</div>
+
+<div>★</div>
+
+<div>☁</div>
+
+<div>✦</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="screen">
+
+
+
+<div class="banner">
+
+
+HATSUNE<br>
+CYBER SPACE
+
+
+</div>
+
+
+
+<div class="search">
+
+🔍 EDIT BY YOUR NAME
+
+</div>
+
+
 
 <div class="cards">
 
-<div class="card">
-
-<h3>Sobre</h3>
-
-<p>
-.
-</p>
-
-</div>
 
 <div class="card">
 
-<h3>Galeria</h3>
+<h2>
+
+PROFILE
+
+</h2>
 
 <p>
-Você pode colocar imagens,
-GIFs,
-ícones,
-ou qualquer conteúdo aqui.
+
+🌸 Nome: Ana<br>
+🎧 Música: Anime Pop<br>
+🎮 Gamer Mode ON
+
 </p>
 
+
 </div>
+
+
+
 
 <div class="card">
 
-<h3>Novidades</h3>
+
+<h2>
+
+COLOR PALETTE
+
+</h2>
+
 
 <p>
-Todos os elementos utilizam
-gradientes animados
-e brilhos suaves.
+
+💙 Azul Neon<br>
+💗 Rosa Pastel<br>
+💜 Roxo Cyber
+
 </p>
 
-</div>
 
 </div>
 
-</div>
+
 
 </div>
 
-<div class="footer">
 
-<button>Entrar</button>
 
-<div class="icons">
-
-🌈 ⭐ 💙 🎨
 
 </div>
 
-</div>
+
+
+
+
+
+
+<div class="character">
+
+
+<div class="avatar">
+
+🌸
 
 </div>
+
+
+
+<h1>
+
+ANIME GIRL
+
+</h1>
+
+
+<p>
+
+Cyber Idol • Gamer • Dreamer
+
+</p>
+
+
+
+
+<div class="stats">
+
+⭐ Level 99
+
+<br><br>
+
+💎 Magic Power
+
+<br><br>
+
+🎵 Music Player
+
+</div>
+
+
+
+<div class="music">
+
+
+▶ NOW PLAYING
+
+
+<br><br>
+
+
+<div class="bar"></div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<footer>
+
+💗 Made with love • Anime Cyber Dream ✨
+
+</footer>
+
+
+
+</div>
+
+
 
 </body>
+
 </html>
