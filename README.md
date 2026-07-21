@@ -1,885 +1,422 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site da Anac</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=Press+Start+2P&family=Pixelify+Sans:wght@400;700&display=swap');
 
-<title>Cyber Anime World ✦</title>
+    * {
+      box-sizing: border-box;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(
+          120deg,
+          rgba(0, 0, 0, 0.82),
+          rgba(40, 26, 34, 0.76),
+          rgba(0, 0, 0, 0.82)
+        ),
+        url("https://i.pinimg.com/736x/2e/6e/14/2e6e14261aadfde2c2dc7627aac2557f.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: "Fredoka", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .window {
+      width: 700px;
+      padding: 15px;
+      background: linear-gradient(
+        135deg,
+        #090909,
+        #1c171a,
+        #30252b
+      );
+      border: 2px solid #f2b8d1;
+      border-radius: 25px;
+      box-shadow:
+        0 0 18px rgba(242, 184, 209, 0.75),
+        0 0 10px rgba(255, 218, 234, 0.65),
+        inset 0 0 15px rgba(255, 218, 234, 0.15);
+    }
 
-<style>
+    /* TOPO */
 
+    .top {
+      height: 55px;
+      background: linear-gradient(
+        90deg,
+        #111111,
+        #dca4bd,
+        #f2bfd5,
+        #dca4bd,
+        #111111
+      );
+      border: 1px solid #ffd8e8;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #ffffff;
+      font-size: 22px;
+      text-shadow:
+        0 0 5px #2b1821,
+        0 0 8px #f2b8d1;
+    }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Fredoka',sans-serif;
+    .buttons {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+   .circle {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e7c7d5;
+  border-radius: 50%;
+  background: #f6dfe9;
+  cursor: pointer;
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.35),
+    0 1px 3px rgba(0,0,0,0.08);
+  transition: .2s;
 }
 
-
-body{
-
-min-height:100vh;
-
-background:
-
-linear-gradient(
-135deg,
-#59d9ff,
-#9b8cff,
-#ff7ddc,
-#ffe3fa
-);
-
-background-size:400% 400%;
-
-animation:bg 12s infinite;
-
-overflow-x:hidden;
-
-color:white;
-
+.circle:hover {
+  background: #fae9f0;
 }
-
-
-
-@keyframes bg{
-
-0%{
-background-position:0% 50%;
-}
-
-50%{
-background-position:100% 50%;
-}
-
-100%{
-background-position:0% 50%;
-}
-
-}
-
-
-
-
-/* EFEITOS */
-
-
-body:before{
-
-content:"";
-
-position:fixed;
-
-inset:0;
-
-background:
-
-radial-gradient(circle,#fff8,transparent 20%);
-
-pointer-events:none;
-
-}
-
-
-
-
-.main{
-
-
-width:95%;
-
-max-width:1500px;
-
-margin:30px auto;
-
-
-background:
-
-rgba(255,255,255,.20);
-
-
-backdrop-filter:blur(20px);
-
-
-border:
-
-3px solid #ffffff70;
-
-
-border-radius:35px;
-
-
-box-shadow:
-
-0 0 50px #ff7beaaa;
-
-
-overflow:hidden;
-
-
-}
-
-
-
-
-
-/* TOPO */
-
-
-header{
-
-
-height:90px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-padding:20px 40px;
-
-
-background:#ffffff30;
-
-
-}
-
-
-
-
-.logo{
-
-
-font-family:Orbitron;
-
-font-size:35px;
-
-
-text-shadow:
-
-0 0 15px white;
-
-
-}
-
-
-
-
-.menu a{
-
-
-text-decoration:none;
-
-color:white;
-
-margin:10px;
-
-padding:10px 20px;
-
-
-border-radius:30px;
-
-
-background:#ffffff35;
-
-
-}
-
-
-
-.menu a:hover{
-
-
-background:#ff8fe5;
-
-
-box-shadow:0 0 20px white;
-
-
-}
-
-
-
-
-
-
-
-/* PAINEL PRINCIPAL */
-
-
-.content{
-
-
-display:grid;
-
-
-grid-template-columns:
-
-100px 1fr 350px;
-
-
-gap:20px;
-
-
-padding:25px;
-
-
-}
-
-
-
-
-
-/* MENU LATERAL */
-
-
-.side{
-
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-
-}
-
-
-
-.side div{
-
-
-height:70px;
-
-border-radius:20px;
-
-
-background:#ffffff40;
-
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-
-font-size:30px;
-
-
-border:2px solid white;
-
-
-}
-
-
-
-
-/* AREA CENTRAL */
-
-
-.screen{
-
-
-background:#ffffff25;
-
-
-border-radius:30px;
-
-
-padding:25px;
-
-
-border:
-
-2px solid #ffffff80;
-
-
-}
-
-
-
-
-.banner{
-
-
-height:300px;
-
-
-border-radius:25px;
-
-
-background:
-
-
-linear-gradient(
-
-135deg,
-
-#7ee8ff,
-
-#ff9be8
-
-);
-
-
-display:flex;
-
-
-align-items:center;
-
-
-justify-content:center;
-
-
-font-size:55px;
-
-
-font-family:Orbitron;
-
-
-text-align:center;
-
-
-box-shadow:
-
-0 0 30px white;
-
-
-}
-
-
-
-
-.search{
-
-
-margin:20px 0;
-
-
-padding:15px;
-
-
-border-radius:20px;
-
-
-background:white;
-
-
-color:#9d75ff;
-
-
-font-weight:bold;
-
-
-}
-
-
-
-
-.cards{
-
-
-display:grid;
-
-
-grid-template-columns:
-
-repeat(2,1fr);
-
-
-gap:20px;
-
-
-}
-
-
-
-
-
-.card{
-
-
-padding:20px;
-
-
-border-radius:25px;
-
-
-background:#ffffff35;
-
-
-border:2px solid #ffffff70;
-
-
-}
-
-
-
-.card h2{
-
-
-font-family:Orbitron;
-
-
-color:white;
-
-
-}
-
-
-
-
-/* PERSONAGEM */
-
-
-.character{
-
-
-background:#ffffff30;
-
-
-border-radius:30px;
-
-
-padding:25px;
-
-
-text-align:center;
-
-
-}
-
-
-
-.avatar{
-
-
-height:240px;
-
-
-border-radius:25px;
-
-
-background:
-
-linear-gradient(
-
-135deg,
-
-#8eeaff,
-
-#ffb6e8
-
-);
-
-
-display:flex;
-
-
-align-items:center;
-
-
-justify-content:center;
-
-
-font-size:100px;
-
-
-border:3px solid white;
-
-
-box-shadow:
-
-0 0 30px white;
-
-
-}
-
-
-
-.character h1{
-
-
-margin-top:20px;
-
-
-font-family:Orbitron;
-
-
-}
-
-
-
-
-
-.stats{
-
-
-margin-top:20px;
-
-
-background:#ffffff30;
-
-
-padding:15px;
-
-
-border-radius:20px;
-
-
-}
-
-
-
-
-
-.music{
-
-
-margin-top:20px;
-
-
-padding:20px;
-
-
-border-radius:25px;
-
-
-background:#ff7edb66;
-
-
-}
-
-
-
-.bar{
-
-
-height:10px;
-
-
-background:white;
-
-
-border-radius:20px;
-
-
-animation:music 4s infinite;
-
-
-}
-
-
-
-@keyframes music{
-
-
-50%{
-
-width:100%;
-
-}
-
-}
-
-
-
-
-/* RODAPE */
-
-
-footer{
-
-
-text-align:center;
-
-padding:25px;
-
-
-background:#ffffff25;
-
-
-font-size:18px;
-
-
-}
-
-
-
-
-@media(max-width:900px){
-
-
-.content{
-
-grid-template-columns:1fr;
-
-}
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-
-.menu{
-
-display:none;
-
-}
-
-
-}
-
-
-
-</style>
-
-
+    /* MENU */
+
+    .nav {
+      display: flex;
+      gap: 12px;
+      margin: 18px 10px;
+    }
+
+    .nav button {
+      flex: 1;
+      padding: 12px;
+      border: 1px solid #f4c6da;
+      border-radius: 30px;
+      background: linear-gradient(
+        90deg,
+        #121212,
+        #dca4bd,
+        #f2bfd5,
+        #dca4bd,
+        #121212
+      );
+      color: white;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow:
+        inset 0 0 10px rgba(255, 255, 255, 0.35),
+        0 0 6px rgba(242, 184, 209, 0.7);
+    }
+
+    .viewer {
+      width: max-content;
+      padding: 8px 20px;
+      border: 1px solid #e7abc5;
+      border-radius: 20px;
+      background: #171315;
+      color: #f4bfd6;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 0 7px rgba(242, 184, 209, 0.45);
+    }
+
+    .content {
+      margin-top: 15px;
+      padding: 20px;
+      background: linear-gradient(
+        130deg,
+        #090909,
+        #201a1d,
+        #372a30
+      );
+      border: 1px solid #dca4bd;
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .section {
+      padding: 12px;
+      background: linear-gradient(
+        145deg,
+        #0d0d0d,
+        #251e21
+      );
+      border: 1px solid #dfabc2;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(242, 184, 209, 0.55);
+    }
+
+    .section-title {
+      padding: 8px;
+      background: linear-gradient(
+        90deg,
+        #151515,
+        #dca4bd,
+        #efbcd2
+      );
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    h1,
+    h2 {
+      color: #f1b7d0;
+      text-shadow: 0 0 5px rgba(242, 184, 209, 0.65);
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      color: #f5d7e4;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    /* IMAGENS ORIGINAIS */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .image {
+      height: 110px;
+      overflow: hidden;
+      background: linear-gradient(
+        45deg,
+        #161616,
+        #e3aec5
+      );
+      border: 3px solid #e8b0c9;
+      border-radius: 15px;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .big-image {
+      grid-column: span 2;
+      height: 130px;
+    }
+
+    /* REDES */
+
+    .social {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social div {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #f6cade;
+      border-radius: 50%;
+      background: linear-gradient(
+        135deg,
+        #1a1718,
+        #dca4bd,
+        #f0b9d1
+      );
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      box-shadow: 0 0 8px rgba(242, 184, 209, 0.65);
+    }
+
+    /* RODAPÉ */
+
+    .footer {
+      height: 55px;
+      margin-top: 15px;
+      background: linear-gradient(
+        90deg,
+        #111111,
+        #dca4bd,
+        #f2bfd5,
+        #dca4bd,
+        #111111
+      );
+      border: 1px solid #ffd8e8;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      text-shadow:
+        0 0 5px #2b1821,
+        0 0 8px #f2b8d1;
+    }
+
+    @media (max-width: 700px) {
+      .window {
+        width: 95%;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
-
-
 <body>
-
-
-<div class="main">
-
-
-
-<header>
-
-
-<div class="logo">
-
-✦ NEON WORLD
-
-</div>
-
-
-
-<div class="menu">
-
-<a href="#">Home</a>
-
-<a href="#">Perfil</a>
-
-<a href="#">Galeria</a>
-
-<a href="#">Links</a>
-
-</div>
-
-
-
-</header>
-
-
-
-
-
-<div class="content">
-
-
-
-<div class="side">
-
-
-<div>♡</div>
-
-<div>音</div>
-
-<div>★</div>
-
-<div>☁</div>
-
-<div>✦</div>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="screen">
-
-
-
-<div class="banner">
-
-
-HATSUNE<br>
-CYBER SPACE
-
-
-</div>
-
-
-
-<div class="search">
-
-🔍 EDIT BY YOUR NAME
-
-</div>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h2>
-
-PROFILE
-
-</h2>
-
-<p>
-
-🌸 Nome: Ana<br>
-🎧 Música: Anime Pop<br>
-🎮 Gamer Mode ON
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<h2>
-
-COLOR PALETTE
-
-</h2>
-
-
-<p>
-
-💙 Azul Neon<br>
-💗 Rosa Pastel<br>
-💜 Roxo Cyber
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-<div class="character">
-
-
-<div class="avatar">
-
-🌸
-
-</div>
-
-
-
-<h1>
-
-ANIME GIRL
-
-</h1>
-
-
-<p>
-
-Cyber Idol • Gamer • Dreamer
-
-</p>
-
-
-
-
-<div class="stats">
-
-⭐ Level 99
-
-<br><br>
-
-💎 Magic Power
-
-<br><br>
-
-🎵 Music Player
-
-</div>
-
-
-
-<div class="music">
-
-
-▶ NOW PLAYING
-
-
-<br><br>
-
-
-<div class="bar"></div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<footer>
-
-💗 Made with love • Anime Cyber Dream ✨
-
-</footer>
-
-
-
-</div>
-
-
-
+  <div class="window">
+    <div class="top">
+      Ana Clara
+
+      <div class="buttons">
+        <div class="circle" id="minimizar"></div>
+        <div class="circle" id="restaurar"></div>
+        <div class="circle" id="fechar"></div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button id="btnEu">eu</button>
+      <button id="btnArtes">artes</button>
+      <button id="btnRedes">redes</button>
+    </div>
+
+    <div class="viewer">anac</div>
+
+    <div class="content">
+      <div>
+        <div class="section">
+          <div class="section-title">ⓘ | сигарета</div>
+
+          <h1>▣ ana clara</h1>
+
+          <p>oiiiii 💗</p>
+
+          <p>
+            aaaaaa.
+            <br><br>
+            aaaaaa
+          </p>
+        </div>
+
+        <br>
+
+        <div class="gallery">
+          <div class="image">
+            <img src="https://i.pinimg.com/474x/d8/a9/f3/d8a9f34eed4cbfbf19261395d4166004.jpg">
+          </div>
+
+          <div class="image">
+            <img src="https://i.ebayimg.com/images/g/8j0AAOSwU-plOF5h/s-l1200.jpg">
+          </div>
+
+          <div class="image big-image">
+            <img src="https://images2.alphacoders.com/121/1212645.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="social">
+          <div>◎</div>
+          <div>▶</div>
+          <div>♪</div>
+        </div>
+
+        <br>
+
+        <div class="gallery">
+          <div class="image">
+            <img src="https://i.pinimg.com/736x/29/3d/b6/293db6f3b9901c375ef8de2bbb71575d.jpg">
+          </div>
+
+          <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq3jqSkOdfXctz78kooqhL1WeSMm6oNmVZsQ&s">
+          </div>
+
+          <div class="image">
+            <img src="https://images.steamusercontent.com/ugc/4105585931633010286/2BF23EB79F3ABF6F7721714F6DFC7F9027992548/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+          </div>
+
+          <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jQg4ljrjbx2feMUvFpEOwPL3DigEk0EHJg&s">
+          </div>
+        </div>
+
+        <br>
+
+        <div class="section">
+          <div class="section-title">.</div>
+
+          <h2>▣ anac</h2>
+
+          <p>
+            .
+            <br>
+            <strong>.</strong>
+            <br>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Ana Clara</div>
+  </div>
+
+  <script>
+    const viewer = document.querySelector(".viewer");
+    const content = document.querySelector(".content");
+
+    document.getElementById("btnEu").onclick = function () {
+      viewer.textContent = "Sobre Mim";
+    };
+
+    document.getElementById("btnArtes").onclick = function () {
+      viewer.textContent = "Artes";
+    };
+
+    document.getElementById("btnRedes").onclick = function () {
+      viewer.textContent = "Redes Sociais";
+    };
+
+    document.getElementById("minimizar").onclick = function () {
+      content.style.display = "none";
+    };
+
+    document.getElementById("restaurar").onclick = function () {
+      content.style.display = "grid";
+    };
+
+    document.getElementById("fechar").onclick = function () {
+      document.querySelector(".window").style.display = "none";
+    };
+  </script>
 </body>
-
 </html>
